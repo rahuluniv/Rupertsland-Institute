@@ -12,7 +12,7 @@
 2. [Project Governance](#2-project-governance)
 3. [Project Phases Overview](#3-project-phases-overview)
 4. [Detailed Phase Breakdown](#4-detailed-phase-breakdown)
-5. [Milestones & Deliverables](#5-milestones--deliverables)
+5. [Milestones and Deliverables](#5-milestones-and-deliverables)
 6. [Project Timeline Gantt Chart](#6-project-timeline-gantt-chart)
 7. [Resource Allocation](#7-resource-allocation)
 8. [Risk Management](#8-risk-management)
@@ -947,7 +947,7 @@ The project is divided into **six major phases** over 32 weeks:
 
 ---
 
-## 5. Milestones & Deliverables
+## 5. Milestones and Deliverables
 
 ### Summary of Major Milestones
 

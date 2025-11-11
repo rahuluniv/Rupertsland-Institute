@@ -5,16 +5,13 @@
 
 1. [Executive Summary](#1-executive-summary)
 2. [Pricing Overview](#2-pricing-overview)
-3. [Development & Implementation Cost Breakdown](#3-development--implementation-cost-breakdown)
+3. [Development and Implementation Cost Breakdown](#3-development-and-implementation-cost-breakdown)
 4. [Training Cost Breakdown](#4-training-cost-breakdown)
 5. [Warranty Support](#5-warranty-support)
-6. [Ongoing Maintenance & Support](#6-ongoing-maintenance--support)
+6. [Ongoing Maintenance and Support](#6-ongoing-maintenance-and-support)
 7. [Payment Terms](#7-payment-terms)
 8. [Cost Assumptions](#8-cost-assumptions)
-9. [Optional Services & Add-ons](#9-optional-services--add-ons)
-10. [Total Investment Summary](#10-total-investment-summary)
-11. [Value Proposition](#11-value-proposition)
-12. [Terms & Conditions](#12-terms--conditions)
+9. [Optional Services and Add-ons](#9-optional-services-and-add-ons)
 
 ---
 
@@ -71,7 +68,7 @@ We propose a **fixed-price contract** for the development and implementation pha
 
 ---
 
-## 3. Development & Implementation Cost Breakdown
+## 3. Development and Implementation Cost Breakdown
 
 ### Total: $90,000
 
@@ -547,7 +544,7 @@ Training is **fully included** in the $90,000 development cost. No additional ch
 
 ---
 
-## 6. Ongoing Maintenance & Support
+## 6. Ongoing Maintenance and Support
 
 ### Monthly Support Plan: $3,000/month
 
@@ -840,7 +837,7 @@ The following items are not included in the $90,000 base price:
 
 ---
 
-## 9. Optional Services & Add-ons
+## 9. Optional Services and Add-ons
 
 ### 9.1 Extended Services
 
