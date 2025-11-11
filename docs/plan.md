@@ -1,7 +1,5 @@
 # Proposed Solution 
 ## Online Student Application Platform for Rupertsland Institute
-
-
 ---
 
 ## Table of Contents
@@ -10,22 +8,22 @@
 2. [Solution Overview](#2-solution-overview)
 3. [Technical Architecture](#3-technical-architecture)
 4. [Technology Stack](#4-technology-stack)
-5. [Core Features & Functionality](#5-core-features--functionality)
+5. [Core Features and Functionality](#5-core-features-and-functionality)
 6. [System Integration](#6-system-integration)
-7. [Security & Privacy](#7-security--privacy)
+7. [Security and Privacy](#7-security-and-privacy)
 8. [User Experience Design](#8-user-experience-design)
-9. [Scalability & Performance](#9-scalability--performance)
-10. [Accessibility & Compliance](#10-accessibility--compliance)
+9. [Scalability and Performance](#9-scalability-and-performance)
+10. [Accessibility and Compliance](#10-accessibility-and-compliance)
 11. [Development Approach](#11-development-approach)
 12. [Testing Strategy](#12-testing-strategy)
-13. [Deployment & Infrastructure](#13-deployment--infrastructure)
-14. [Training & Documentation](#14-training--documentation)
+13. [Deployment and Infrastructure](#13-deployment-and-infrastructure)
+14. [Training and Documentation](#14-training-and-documentation)
 
 ---
 
 ## 1. Executive Summary
 
-Innoviware Solutions proposes a modern, secure, and highly functional Online Student Application Platform that will streamline the funding application process for Métis students and enhance administrative efficiency for Rupertsland Institute staff. Our solution leverages cutting-edge technologies—**.NET 8** for the backend API and **Next.js 14** for the frontend—to deliver a robust, scalable, and user-friendly platform.
+Innoviware Solutions proposes a modern, secure and highly functional Online Student Application Platform that will streamline the funding application process for Métis students and enhance administrative efficiency for Rupertsland Institute staff. Our solution leverages cutting-edge technologies—**.NET 8** for the backend API and **Next.js 14** for the frontend—to deliver a robust, scalable and user-friendly platform.
 
 Our proposed platform will:
 - Provide an intuitive student-facing application portal
@@ -47,7 +45,8 @@ Our solution follows a modern **three-tier architecture**:
 2. **Application Layer:** .NET 8 Web API handling business logic and orchestration
 3. **Data Layer:** Microsoft SQL Server 2022 for secure data storage and management
 
-This architecture ensures:
+**This architecture ensures:**
+
 - Clear separation of concerns
 - Enhanced security through API-based access
 - Flexibility for future enhancements
@@ -69,64 +68,7 @@ The platform consists of four primary modules:
 
 ### 3.1 Architecture Diagram
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                     Client Devices                          │
-│         (Desktop, Tablet, Mobile Browsers)                  │
-└────────────────────┬────────────────────────────────────────┘
-                     │
-                     │ HTTPS
-                     │
-┌────────────────────▼────────────────────────────────────────┐
-│              PRESENTATION LAYER                             │
-│                                                              │
-│  ┌──────────────────┐         ┌──────────────────┐         │
-│  │  Student Portal  │         │  Admin Portal    │         │
-│  │   (Next.js 14)   │         │   (Next.js 14)   │         │
-│  └──────────────────┘         └──────────────────┘         │
-└────────────────────┬────────────────────────────────────────┘
-                     │
-                     │ API Calls (HTTPS/REST)
-                     │
-┌────────────────────▼────────────────────────────────────────┐
-│              APPLICATION LAYER                              │
-│                                                              │
-│  ┌──────────────────────────────────────────────────────┐  │
-│  │         .NET 8 Web API (RESTful)                     │  │
-│  ├──────────────────────────────────────────────────────┤  │
-│  │  • Authentication Service (OIDC)                     │  │
-│  │  • Authorization Service (OAUTH2)                    │  │
-│  │  • Application Management Service                    │  │
-│  │  • Document Management Service                       │  │
-│  │  • User Management Service                           │  │
-│  │  • Integration Service (KETO)                        │  │
-│  │  • Notification Service                              │  │
-│  │  • Reporting Service                                 │  │
-│  └──────────────────────────────────────────────────────┘  │
-└────────────────────┬───────────────────┬────────────────────┘
-                     │                   │
-         ┌───────────┴───────┐           │
-         │                   │           │
-┌────────▼────────┐  ┌───────▼────────┐ │
-│   DATA LAYER    │  │   INTEGRATION  │ │
-│                 │  │                │ │
-│  SQL Server     │  │  KETO System   │ │
-│  2022           │  │  Integration   │ │
-│                 │  │                │ │
-│  • Students     │  └────────────────┘ │
-│  • Applications │                     │
-│  • Documents    │  ┌────────────────┐ │
-│  • Audit Logs   │  │  Identity      │ │
-│  • Reports      │  │  Provider      │ │
-│                 │  │  (Rupertsland  │ │
-│                 │  │  Auth Server)  │ │
-└─────────────────┘  └────────────────┘ │
-                                        │
-                     ┌──────────────────▼──┐
-                     │  File Storage       │
-                     │  (Documents/IDs)    │
-                     └─────────────────────┘
-```
+![Architecture Diagram](assets/Arch.png)
 
 ### 3.2 Architecture Benefits
 
@@ -136,6 +78,11 @@ The platform consists of four primary modules:
 - **Performance:** Optimized data flow and caching strategies
 - **Flexibility:** Easy to extend with new features and integrations
 - **Reliability:** Redundancy and failover capabilities
+
+### 3.3 Sequence Diagram
+
+![Sequence Diagram](assets/sequence_diagram.png)
+
 
 ---
 
@@ -224,13 +171,14 @@ Next.js provides an optimal foundation for the user interface with:
 
 ---
 
-## 5. Core Features & Functionality
+## 5. Core Features and Functionality
 
 ### 5.1 Student Portal Features
 
 #### 5.1.1 User Registration & Authentication
 
 **Features:**
+
 - Self-registration with email verification
 - Multi-factor authentication (MFA) using Rupertsland Identity Server
 - Password strength requirements and secure reset process
@@ -238,6 +186,7 @@ Next.js provides an optimal foundation for the user interface with:
 - Account lockout protection after failed login attempts
 
 **Technical Implementation:**
+
 - Next.js frontend with NextAuth.js for authentication flow
 - .NET 8 API integration with Rupertsland OIDC identity provider
 - Secure session management with encrypted cookies
@@ -246,29 +195,31 @@ Next.js provides an optimal foundation for the user interface with:
 #### 5.1.2 Student Profile Management
 
 **Features:**
+
 - Personal Information:
-  - Full legal name
-  - Date of birth
-  - Contact details (email, phone, mailing address)
-  - Social Insurance Number (encrypted storage)
-  - Métis citizenship number
+    - Full legal name
+    - Date of birth
+    - Contact details (email, phone, mailing address)
+    - Social Insurance Number (encrypted storage)
+    - Métis citizenship number
   
 - Document Upload:
-  - Government-issued photo ID (driver's license, passport)
-  - Métis citizenship card
-  - Supporting documents
-  - Drag-and-drop file upload interface
-  - File type validation (PDF, JPG, PNG)
-  - File size limits with client-side validation
-  - Automatic virus scanning
+    - Government-issued photo ID (driver's license, passport)
+    - Métis citizenship card
+    - Supporting documents
+    - Drag-and-drop file upload interface
+    - File type validation (PDF, JPG, PNG)
+    - File size limits with client-side validation
+    - Automatic virus scanning
 
 - Profile Editing:
-  - Edit personal information
-  - Update contact details
-  - Replace uploaded documents
-  - View document upload history
+    - Edit personal information
+    - Update contact details
+    - Replace uploaded documents
+    - View document upload history
 
 **Technical Implementation:**
+
 - React Hook Form for efficient form handling
 - Zod schema validation for data integrity
 - Chunked file upload for large documents
@@ -278,6 +229,7 @@ Next.js provides an optimal foundation for the user interface with:
 #### 5.1.3 Academic Information Entry
 
 **Features:**
+
 - Institution selection (dropdown with search)
 - Program/course of study
 - Year of study (1st, 2nd, 3rd, 4th, graduate)
@@ -287,6 +239,7 @@ Next.js provides an optimal foundation for the user interface with:
 - Academic standing
 
 **Technical Implementation:**
+
 - Dynamic form fields based on institution type
 - Institution database with auto-complete search
 - Validation of program codes and credentials
@@ -295,32 +248,34 @@ Next.js provides an optimal foundation for the user interface with:
 #### 5.1.4 Funding Application Submission
 
 **Features:**
+
 - Multi-step application wizard:
-  1. Personal Information Review
-  2. Academic Information
-  3. Financial Information
-  4. Document Upload
-  5. Application Review & Submit
+    1. Personal Information Review
+    2. Academic Information
+    3. Financial Information
+    4. Document Upload
+    5. Application Review & Submit
   
 - Application Types:
-  - Post-secondary tuition funding
-  - Living allowance
-  - Books and supplies
-  - Travel support
-  - Special needs support
+    - Post-secondary tuition funding
+    - Living allowance
+    - Books and supplies
+    - Travel support
+    - Special needs support
   
 - Progress Saving:
-  - Auto-save functionality
-  - Save draft and return later
-  - Progress indicator showing completion status
+    - Auto-save functionality
+    - Save draft and return later
+    - Progress indicator showing completion status
   
 - Document Requirements Checklist:
-  - Confirmation of enrollment
-  - Tuition invoice/receipt
-  - Course schedule
-  - Additional supporting documents
+    - Confirmation of enrollment
+    - Tuition invoice/receipt
+    - Course schedule
+    - Additional supporting documents
 
 **Technical Implementation:**
+
 - Multi-step form with state management
 - Client-side validation before submission
 - Server-side validation for security
@@ -331,28 +286,30 @@ Next.js provides an optimal foundation for the user interface with:
 #### 5.1.5 Application Status Tracking
 
 **Features:**
+
 - Dashboard showing all applications:
-  - Current status (Submitted, Under Review, Approved, Declined, Pending Documents)
-  - Submission date
-  - Application number
-  - Funding type and amount requested
+    - Current status (Submitted, Under Review, Approved, Declined, Pending Documents)
+    - Submission date
+    - Application number
+    - Funding type and amount requested
   
 - Status Timeline:
-  - Visual timeline showing application progress
-  - Timestamps for each status change
-  - Staff notes (when applicable)
+    - Visual timeline showing application progress
+    - Timestamps for each status change
+    - Staff notes (when applicable)
   
 - Notifications:
-  - Email notifications for status changes
-  - In-app notification center
-  - Push notifications (optional mobile feature)
+    - Email notifications for status changes
+    - In-app notification center
+    - Push notifications (optional mobile feature)
   
 - Document Requests:
-  - View requested additional documents
-  - Upload requested documents directly
-  - Track document submission
+    - View requested additional documents
+    - Upload requested documents directly
+    - Track document submission
 
 **Technical Implementation:**
+
 - Real-time status updates via API polling or SignalR
 - TanStack Query for efficient data caching
 - Email notification service
@@ -361,6 +318,7 @@ Next.js provides an optimal foundation for the user interface with:
 #### 5.1.6 Document Center
 
 **Features:**
+
 - View all uploaded documents
 - Download previously submitted documents
 - Upload additional supporting documents
@@ -368,6 +326,7 @@ Next.js provides an optimal foundation for the user interface with:
 - Document status (Pending Review, Verified, Rejected)
 
 **Technical Implementation:**
+
 - Secure document retrieval with authorization checks
 - PDF viewer component
 - Document thumbnails for images
@@ -376,12 +335,14 @@ Next.js provides an optimal foundation for the user interface with:
 #### 5.1.7 Communication Portal
 
 **Features:**
+
 - Message center for staff communication
 - View announcements and updates
 - Submit inquiries to support staff
 - Receive automated notifications
 
 **Technical Implementation:**
+
 - Message threading and history
 - Notification delivery system
 - Rich text editor for messages
@@ -391,29 +352,31 @@ Next.js provides an optimal foundation for the user interface with:
 #### 5.2.1 Application Management Dashboard
 
 **Features:**
+
 - Overview Dashboard:
-  - Total applications (by status)
-  - Applications requiring action
-  - Pending reviews
-  - Recent submissions
-  - Key metrics and KPIs
+    - Total applications (by status)
+    - Applications requiring action
+    - Pending reviews
+    - Recent submissions
+    - Key metrics and KPIs
   
 - Application Queue:
-  - Sortable list of all applications
-  - Filter by status, date, funding type
-  - Search by student name, application number
-  - Batch operations support
-  - Priority flagging system
+    - Sortable list of all applications
+    - Filter by status, date, funding type
+    - Search by student name, application number
+    - Batch operations support
+    - Priority flagging system
   
 - Application Details View:
-  - Complete application information
-  - Student profile and history
-  - All uploaded documents
-  - Previous applications by student
-  - Internal notes and comments
-  - Activity timeline
+    - Complete application information
+    - Student profile and history
+    - All uploaded documents
+    - Previous applications by student
+    - Internal notes and comments
+    - Activity timeline
 
 **Technical Implementation:**
+
 - Server-side pagination for large datasets
 - Advanced filtering with SQL query optimization
 - Real-time updates for collaborative review
@@ -422,35 +385,37 @@ Next.js provides an optimal foundation for the user interface with:
 #### 5.2.2 Application Review & Processing
 
 **Features:**
+
 - Document Verification:
-  - Side-by-side document viewer
-  - Zoom and annotation tools
-  - Document approval/rejection with reasons
-  - Request additional documents
+    - Side-by-side document viewer
+    - Zoom and annotation tools
+    - Document approval/rejection with reasons
+    - Request additional documents
   
 - Application Assessment:
-  - Eligibility checklist
-  - Funding calculation tools
-  - Internal assessment notes
-  - Recommendation workflow
+    - Eligibility checklist
+    - Funding calculation tools
+    - Internal assessment notes
+    - Recommendation workflow
   
 - Decision Actions:
-  - Approve with funding amount
-  - Decline with reason
-  - Request more information
-  - Place on hold with notes
+    - Approve with funding amount
+    - Decline with reason
+    - Request more information
+    - Place on hold with notes
   
 - Approval Workflow:
-  - Multi-level approval routing
-  - Digital signature capture (if required)
-  - Automated email notifications to students
+    - Multi-level approval routing
+    - Digital signature capture (if required)
+    - Automated email notifications to students
   
 - Batch Processing:
-  - Approve multiple applications
-  - Export applications for financial processing
-  - Bulk status updates
+    - Approve multiple applications
+    - Export applications for financial processing
+    - Bulk status updates
 
 **Technical Implementation:**
+
 - Workflow engine for approval routing
 - Document comparison tools
 - Calculation engine for funding amounts
@@ -460,6 +425,7 @@ Next.js provides an optimal foundation for the user interface with:
 #### 5.2.3 Student Account Management
 
 **Features:**
+
 - Search and view student profiles
 - Edit student information (with authorization)
 - View complete application history
@@ -470,6 +436,7 @@ Next.js provides an optimal foundation for the user interface with:
 - Manage MFA settings
 
 **Technical Implementation:**
+
 - Advanced search with indexing
 - Change tracking and audit logs
 - Role-based editing permissions
@@ -478,6 +445,7 @@ Next.js provides an optimal foundation for the user interface with:
 #### 5.2.4 Document Management System
 
 **Features:**
+
 - Centralized document repository
 - Document verification status tracking
 - Bulk document download
@@ -487,6 +455,7 @@ Next.js provides an optimal foundation for the user interface with:
 - Export documents to external systems
 
 **Technical Implementation:**
+
 - Indexed document storage
 - Full-text search capabilities
 - Secure file handling with virus scanning
@@ -495,34 +464,36 @@ Next.js provides an optimal foundation for the user interface with:
 #### 5.2.5 Reporting & Analytics Dashboard
 
 **Features:**
+
 - Pre-built Reports:
-  - Application volume by period
-  - Funding disbursement summary
-  - Application processing times
-  - Approval/decline rates
-  - Demographics breakdown
-  - Institution distribution
-  - Program type analysis
+    - Application volume by period
+    - Funding disbursement summary
+    - Application processing times
+    - Approval/decline rates
+    - Demographics breakdown
+    - Institution distribution
+    - Program type analysis
   
 - Custom Report Builder:
-  - Select data fields
-  - Apply filters and date ranges
-  - Choose visualization types
-  - Save report templates
+    - Select data fields
+    - Apply filters and date ranges
+    - Choose visualization types
+    - Save report templates
   
 - Data Visualization:
-  - Interactive charts and graphs
-  - Trend analysis
-  - Comparative analytics
-  - Geographic mapping (future phase)
+    - Interactive charts and graphs
+    - Trend analysis
+    - Comparative analytics
+    - Geographic mapping (future phase)
   
 - Export Capabilities:
-  - PDF export
-  - Excel export
-  - CSV export
-  - Scheduled report delivery
+    - PDF export
+    - Excel export
+    - CSV export
+    - Scheduled report delivery
 
 **Technical Implementation:**
+
 - Optimized database queries with indexing
 - Report caching for performance
 - Chart.js/Recharts for visualizations
@@ -532,25 +503,27 @@ Next.js provides an optimal foundation for the user interface with:
 #### 5.2.6 Financial Tracking & Commitments
 
 **Features:**
+
 - Budget Monitoring:
-  - Total budget vs. committed funds
-  - Available funding by category
-  - Fiscal year tracking
-  - Budget alerts and warnings
+    - Total budget vs. committed funds
+    - Available funding by category
+    - Fiscal year tracking
+    - Budget alerts and warnings
   
 - Commitment Tracking:
-  - Committed vs. disbursed amounts
-  - Payment status tracking
-  - Outstanding commitments
-  - Reconciliation tools
+    - Committed vs. disbursed amounts
+    - Payment status tracking
+    - Outstanding commitments
+    - Reconciliation tools
   
 - Payment Management:
-  - Mark payments as issued
-  - Track payment methods
-  - Payment history by student
-  - Export payment data for accounting systems
+    - Mark payments as issued
+    - Track payment methods
+    - Payment history by student
+    - Export payment data for accounting systems
 
 **Technical Implementation:**
+
 - Financial calculation engine
 - Real-time budget calculations
 - Integration with accounting systems
@@ -560,25 +533,27 @@ Next.js provides an optimal foundation for the user interface with:
 #### 5.2.7 User & Role Management
 
 **Features:**
+
 - Staff user management
 - Role-based access control (RBAC):
-  - Administrator
-  - Application Reviewer
-  - Financial Officer
-  - Read-Only Viewer
-  - Custom roles
+    - Administrator
+    - Application Reviewer
+    - Financial Officer
+    - Read-Only Viewer
+    - Custom roles
   
 - Permission Management:
-  - Granular permissions by module
-  - Data access restrictions
-  - Feature-level permissions
+    - Granular permissions by module
+    - Data access restrictions
+    - Feature-level permissions
   
 - Activity Monitoring:
-  - User activity logs
-  - Login history
-  - Security event tracking
+    - User activity logs
+    - Login history
+    - Security event tracking
 
 **Technical Implementation:**
+
 - Claims-based authorization in .NET
 - Permission caching for performance
 - Secure session management
@@ -587,6 +562,7 @@ Next.js provides an optimal foundation for the user interface with:
 #### 5.2.8 System Configuration
 
 **Features:**
+
 - Application settings management
 - Email template configuration
 - Notification preferences
@@ -596,6 +572,7 @@ Next.js provides an optimal foundation for the user interface with:
 - API key management
 
 **Technical Implementation:**
+
 - Configuration service with caching
 - Secure storage of sensitive settings
 - Version control for configuration changes
@@ -606,6 +583,7 @@ Next.js provides an optimal foundation for the user interface with:
 #### 5.3.1 Help & Support
 
 **Features:**
+
 - Contextual help tooltips
 - FAQ section
 - Video tutorials
@@ -614,6 +592,7 @@ Next.js provides an optimal foundation for the user interface with:
 - Chat support integration (future phase)
 
 **Technical Implementation:**
+
 - Dynamic help content management
 - Video hosting and streaming
 - Support ticket creation
@@ -622,6 +601,7 @@ Next.js provides an optimal foundation for the user interface with:
 #### 5.3.2 Notifications System
 
 **Features:**
+
 - Email notifications
 - In-app notifications
 - SMS notifications (optional)
@@ -629,6 +609,7 @@ Next.js provides an optimal foundation for the user interface with:
 - Notification history
 
 **Technical Implementation:**
+
 - Background job processing with Hangfire
 - Email service with templating
 - SMS gateway integration (Twilio/similar)
@@ -647,21 +628,24 @@ Our solution will provide seamless bi-directional integration with the existing 
 **Integration Features:**
 
 1. **Data Synchronization:**
-   - Student demographic information
-   - Application data and status
-   - Document references
-   - Funding decisions and amounts
-   - Payment information
+
+    - Student demographic information
+    - Application data and status
+    - Document references
+    - Funding decisions and amounts
+    - Payment information
    
 2. **Real-Time Updates:**
-   - Push application data to KETO upon submission
-   - Pull student information from KETO for validation
-   - Sync status changes in both systems
+
+    - Push application data to KETO upon submission
+    - Pull student information from KETO for validation
+    - Sync status changes in both systems
    
 3. **Automated Workflows:**
-   - Trigger KETO workflows from application events
-   - Receive KETO case updates and reflect in application system
-   - Automated case creation in KETO for new applications
+
+    - Trigger KETO workflows from application events
+    - Receive KETO case updates and reflect in application system
+    - Automated case creation in KETO for new applications
 
 **Technical Implementation:**
 
@@ -676,31 +660,7 @@ Our solution will provide seamless bi-directional integration with the existing 
 
 **Integration Architecture:**
 
-```
-┌───────────────────────────┐
-│  Student Application      │
-│  Platform (.NET API)      │
-│                           │
-│  ┌─────────────────────┐ │
-│  │ Integration Service │ │
-│  │  • Data Mapper      │ │
-│  │  • API Client       │ │
-│  │  • Queue Handler    │ │
-│  │  • Error Handler    │ │
-│  └─────────┬───────────┘ │
-└────────────┼─────────────┘
-             │
-             │ API/SOAP
-             │
-┌────────────▼─────────────┐
-│   KETO System            │
-│   Case Management        │
-│                          │
-│  • Student Cases         │
-│  • Application Records   │
-│  • Financial Data        │
-└──────────────────────────┘
-```
+![KETO Integration](assets/Integration.png)
 
 ### 6.2 Identity Server Integration
 
@@ -709,53 +669,19 @@ Our solution will provide seamless bi-directional integration with the existing 
 - **Protocol:** OpenID Connect (OIDC)
 - **Authorization:** OAUTH2
 - **Implementation:** 
-  - NextAuth.js on frontend for OIDC flow
-  - .NET 8 Identity integration for API authentication
-  - JWT token validation middleware
+
+    - NextAuth.js on frontend for OIDC flow
+    - .NET 8 Identity integration for API authentication
+    - JWT token validation middleware
   
 - **Features:**
-  - Single Sign-On (SSO) capability
-  - Multi-factor authentication (MFA)
-  - Session management
-  - Token refresh handling
-  - Secure logout
 
-**Technical Implementation:**
+    - Single Sign-On (SSO) capability
+    - Multi-factor authentication (MFA)
+    - Session management
+    - Token refresh handling
+    - Secure logout
 
-```csharp
-// .NET API - OIDC Configuration
-services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-    .AddJwtBearer(options =>
-    {
-        options.Authority = "https://identity.rupertsland.org";
-        options.Audience = "student-portal-api";
-        options.RequireHttpsMetadata = true;
-    });
-```
-
-```typescript
-// Next.js - NextAuth Configuration
-export const authOptions: NextAuthOptions = {
-  providers: [
-    {
-      id: "rupertsland",
-      name: "Rupertsland",
-      type: "oauth",
-      wellKnown: "https://identity.rupertsland.org/.well-known/openid-configuration",
-      authorization: { params: { scope: "openid profile email" } },
-      idToken: true,
-      checks: ["pkce", "state"],
-      profile(profile) {
-        return {
-          id: profile.sub,
-          name: profile.name,
-          email: profile.email,
-        }
-      },
-    }
-  ],
-}
-```
 
 ### 6.3 Email Service Integration
 
@@ -791,11 +717,12 @@ export const authOptions: NextAuthOptions = {
 
 ---
 
-## 7. Security & Privacy
+## 7. Security and Privacy
 
 ### 7.1 Authentication & Authorization
 
 **Multi-Factor Authentication (MFA):**
+
 - Integration with Rupertsland Identity Server
 - Support for authenticator apps (Google Authenticator, Microsoft Authenticator)
 - SMS-based verification (optional)
@@ -803,6 +730,7 @@ export const authOptions: NextAuthOptions = {
 - Backup codes for account recovery
 
 **Authorization Model:**
+
 - Role-Based Access Control (RBAC)
 - Claims-based authorization
 - Resource-level permissions
@@ -812,12 +740,14 @@ export const authOptions: NextAuthOptions = {
 ### 7.2 Data Encryption
 
 **Encryption at Rest:**
+
 - Database encryption using SQL Server TDE (Transparent Data Encryption)
 - File system encryption for documents
 - AES-256 encryption for sensitive fields (SIN, etc.)
 - Encrypted backups
 
 **Encryption in Transit:**
+
 - TLS 1.3 for all communications
 - HTTPS enforcement
 - Certificate pinning for API clients
@@ -826,6 +756,7 @@ export const authOptions: NextAuthOptions = {
 ### 7.3 Privacy Compliance
 
 **FOIP (Freedom of Information and Protection of Privacy Act):**
+
 - Collection limitation
 - Purpose specification
 - Use limitation
@@ -834,6 +765,7 @@ export const authOptions: NextAuthOptions = {
 - Data retention and disposal
 
 **PIPEDA (Personal Information Protection and Electronic Documents Act):**
+
 - Accountability
 - Identifying purposes
 - Consent
@@ -846,6 +778,7 @@ export const authOptions: NextAuthOptions = {
 - Challenging compliance
 
 **Implementation:**
+
 - Privacy policy and terms of service
 - Consent tracking and management
 - Data access logs and audit trails
@@ -860,50 +793,60 @@ export const authOptions: NextAuthOptions = {
 **OWASP Top 10 Protection:**
 
 1. **Injection Prevention:**
-   - Parameterized queries (Entity Framework)
-   - Input validation and sanitization
-   - Output encoding
+
+    - Parameterized queries (Entity Framework)
+    - Input validation and sanitization
+    - Output encoding
    
 2. **Broken Authentication:**
-   - Secure session management
-   - Strong password policies
-   - Account lockout mechanisms
-   - MFA implementation
+
+    - Secure session management
+    - Strong password policies
+    - Account lockout mechanisms
+    - MFA implementation
    
 3. **Sensitive Data Exposure:**
-   - Data encryption
-   - Secure key management
-   - HTTPS enforcement
+
+    - Data encryption
+    - Secure key management
+    - HTTPS enforcement
    
 4. **XML External Entities (XXE):**
-   - Disable XML external entity processing
-   - Input validation
+
+    - Disable XML external entity processing
+    - Input validation
    
 5. **Broken Access Control:**
-   - Enforce authorization checks
-   - Deny by default
-   - Rate limiting
+
+    - Enforce authorization checks
+    - Deny by default
+    - Rate limiting
    
 6. **Security Misconfiguration:**
-   - Secure default configurations
-   - Regular security updates
-   - Disable unnecessary features
+
+    - Secure default configurations
+    - Regular security updates
+    - Disable unnecessary features
    
 7. **Cross-Site Scripting (XSS):**
-   - React's built-in XSS protection
-   - Content Security Policy (CSP)
-   - Input sanitization
+
+    - React's built-in XSS protection
+    - Content Security Policy (CSP)
+    - Input sanitization
    
 8. **Insecure Deserialization:**
-   - Validate deserialized objects
-   - Integrity checks
+
+    - Validate deserialized objects
+    - Integrity checks
    
 9. **Using Components with Known Vulnerabilities:**
-   - Regular dependency updates
-   - Automated vulnerability scanning
-   - Security advisory monitoring
+
+    - Regular dependency updates
+    - Automated vulnerability scanning
+    - Security advisory monitoring
    
 10. **Insufficient Logging & Monitoring:**
+
     - Comprehensive logging (Serilog)
     - Security event monitoring
     - Alerting for suspicious activities
@@ -911,6 +854,7 @@ export const authOptions: NextAuthOptions = {
 ### 7.5 Security Testing
 
 **Security Measures:**
+
 - Static Application Security Testing (SAST)
 - Dynamic Application Security Testing (DAST)
 - Dependency vulnerability scanning
@@ -921,6 +865,7 @@ export const authOptions: NextAuthOptions = {
 ### 7.6 Data Backup & Recovery
 
 **Backup Strategy:**
+
 - Automated daily database backups
 - Document storage backups
 - Retention period: 7 years (configurable)
@@ -929,6 +874,7 @@ export const authOptions: NextAuthOptions = {
 - Disaster recovery plan
 
 **Business Continuity:**
+
 - Recovery Time Objective (RTO): < 4 hours
 - Recovery Point Objective (RPO): < 24 hours
 - Documented recovery procedures
@@ -941,6 +887,7 @@ export const authOptions: NextAuthOptions = {
 ### 8.1 Design Principles
 
 **User-Centered Design:**
+
 - Intuitive navigation
 - Clear visual hierarchy
 - Consistent design language
@@ -949,6 +896,7 @@ export const authOptions: NextAuthOptions = {
 - Error prevention and recovery
 
 **Accessibility First:**
+
 - WCAG 2.1 AA compliance
 - Keyboard navigation
 - Screen reader compatibility
@@ -957,6 +905,7 @@ export const authOptions: NextAuthOptions = {
 - Alternative text for images
 
 **Mobile-First Responsive Design:**
+
 - Optimized for all screen sizes
 - Touch-friendly interfaces
 - Efficient mobile workflows
@@ -965,6 +914,7 @@ export const authOptions: NextAuthOptions = {
 ### 8.2 User Interface Features
 
 **Student Portal UI:**
+
 - Clean, modern dashboard
 - Guided application wizard
 - Progress indicators
@@ -974,6 +924,7 @@ export const authOptions: NextAuthOptions = {
 - Success confirmations
 
 **Administrative Portal UI:**
+
 - Information-dense dashboard
 - Data tables with sorting/filtering
 - Quick actions and shortcuts
@@ -984,6 +935,7 @@ export const authOptions: NextAuthOptions = {
 ### 8.3 Usability Testing
 
 **Testing Approach:**
+
 - User acceptance testing with actual students and staff
 - Usability testing sessions
 - A/B testing for key workflows
@@ -993,11 +945,12 @@ export const authOptions: NextAuthOptions = {
 
 ---
 
-## 9. Scalability & Performance
+## 9. Scalability and Performance
 
 ### 9.1 Scalability Architecture
 
 **Horizontal Scalability:**
+
 - Stateless API design for easy scaling
 - Load balancing support
 - Database connection pooling
@@ -1005,12 +958,14 @@ export const authOptions: NextAuthOptions = {
 - Session state management
 
 **Database Optimization:**
+
 - Proper indexing strategy
 - Query optimization
 - Database partitioning (future)
 - Read replicas for reporting (optional)
 
 **Caching Strategy:**
+
 - Client-side caching with TanStack Query
 - API response caching
 - Static asset caching with CDN
@@ -1019,18 +974,21 @@ export const authOptions: NextAuthOptions = {
 ### 9.2 Performance Targets
 
 **Response Times:**
+
 - Page load time: < 2 seconds
 - API response time: < 500ms (95th percentile)
 - Database query time: < 100ms (average)
 - Document upload: Chunked upload for large files
 
 **Capacity Planning:**
+
 - Support 10,000+ concurrent users
 - Process 50,000+ applications per year
 - Handle 500GB+ of document storage
 - Scale to accommodate 50% annual growth
 
 **Performance Monitoring:**
+
 - Application Performance Monitoring (APM)
 - Real-time performance dashboards
 - Automated performance alerts
@@ -1038,28 +996,32 @@ export const authOptions: NextAuthOptions = {
 
 ---
 
-## 10. Accessibility & Compliance
+## 10. Accessibility and Compliance
 
 ### 10.1 WCAG 2.1 AA Compliance
 
 **Perceivable:**
+
 - Text alternatives for non-text content
 - Captions and alternatives for multimedia
 - Adaptable content presentation
 - Distinguishable foreground and background
 
 **Operable:**
+
 - Keyboard accessible functionality
 - Sufficient time for user actions
 - Seizure-safe design (no flashing)
 - Navigable and findable content
 
 **Understandable:**
+
 - Readable and understandable text
 - Predictable functionality
 - Input assistance and error identification
 
 **Robust:**
+
 - Compatible with assistive technologies
 - Valid HTML and ARIA markup
 - Browser and device compatibility
@@ -1067,6 +1029,7 @@ export const authOptions: NextAuthOptions = {
 ### 10.2 Accessibility Features
 
 **Technical Implementation:**
+
 - Semantic HTML5 markup
 - ARIA labels and roles
 - Skip navigation links
@@ -1082,6 +1045,7 @@ export const authOptions: NextAuthOptions = {
 ### 10.3 Compliance Documentation
 
 **Deliverables:**
+
 - VPAT (Voluntary Product Accessibility Template)
 - Accessibility conformance report
 - User testing with assistive technologies
@@ -1093,7 +1057,9 @@ export const authOptions: NextAuthOptions = {
 
 ### 11.1 Agile Methodology
 
+![Agile Methodology](assets/Agile.png)
 **Sprint Structure:**
+
 - 2-week sprints
 - Sprint planning sessions
 - Daily stand-ups (remote/in-person)
@@ -1102,6 +1068,7 @@ export const authOptions: NextAuthOptions = {
 - Continuous feedback integration
 
 **Collaboration Tools:**
+
 - Azure DevOps / Jira for project management
 - Slack / Teams for communication
 - Confluence / SharePoint for documentation
@@ -1110,6 +1077,7 @@ export const authOptions: NextAuthOptions = {
 ### 11.2 Development Phases
 
 **Phase 1: Foundation (Weeks 1-4)**
+
 - Requirements finalization
 - Technical architecture setup
 - Development environment configuration
@@ -1119,6 +1087,7 @@ export const authOptions: NextAuthOptions = {
 - CI/CD pipeline setup
 
 **Phase 2: Core Student Features (Weeks 5-10)**
+
 - Student registration and login
 - Profile management
 - Application submission workflow
@@ -1128,6 +1097,7 @@ export const authOptions: NextAuthOptions = {
 - Testing and refinement
 
 **Phase 3: Administrative Portal (Weeks 11-16)**
+
 - Admin dashboard
 - Application review workflows
 - Document verification tools
@@ -1137,6 +1107,7 @@ export const authOptions: NextAuthOptions = {
 - Testing and refinement
 
 **Phase 4: Integration & Advanced Features (Weeks 17-22)**
+
 - KETO system integration
 - Advanced reporting and analytics
 - Financial tracking
@@ -1146,6 +1117,7 @@ export const authOptions: NextAuthOptions = {
 - Integration testing
 
 **Phase 5: Testing & Deployment (Weeks 23-28)**
+
 - User acceptance testing
 - Accessibility testing
 - Security testing
@@ -1160,6 +1132,7 @@ export const authOptions: NextAuthOptions = {
 ### 11.3 Quality Assurance
 
 **Testing Strategy:**
+
 - Unit testing (80%+ code coverage)
 - Integration testing
 - End-to-end testing
@@ -1170,6 +1143,7 @@ export const authOptions: NextAuthOptions = {
 - User acceptance testing
 
 **Tools & Frameworks:**
+
 - **Backend:** xUnit, NUnit for .NET testing
 - **Frontend:** Jest, React Testing Library
 - **E2E:** Playwright or Cypress
@@ -1183,42 +1157,49 @@ export const authOptions: NextAuthOptions = {
 ### 12.1 Testing Levels
 
 **Unit Testing:**
+
 - Individual component testing
 - Business logic validation
 - 80%+ code coverage target
 - Automated test execution in CI/CD
 
 **Integration Testing:**
+
 - API endpoint testing
 - Database integration testing
 - External service integration testing
 - Authentication flow testing
 
 **End-to-End Testing:**
+
 - Complete user workflow testing
 - Critical path testing
 - Cross-browser testing
 - Mobile device testing
 
 **Performance Testing:**
+
 - Load testing with realistic user volumes
 - Stress testing to identify limits
 - Spike testing for traffic surges
 - Endurance testing for stability
 
 **Security Testing:**
+
 - Vulnerability scanning
 - Penetration testing
 - Authentication and authorization testing
 - Data encryption verification
 
 **Accessibility Testing:**
+
 - Automated accessibility scanning
 - Manual testing with screen readers
 - Keyboard navigation testing
 - Color contrast verification
 
 **User Acceptance Testing:**
+
 - Testing with actual Métis students
 - Testing with administrative staff
 - Feedback collection and iteration
@@ -1227,6 +1208,7 @@ export const authOptions: NextAuthOptions = {
 ### 12.2 Test Automation
 
 **CI/CD Pipeline:**
+
 - Automated builds on code commit
 - Automated unit and integration tests
 - Code quality and security scanning
@@ -1234,6 +1216,7 @@ export const authOptions: NextAuthOptions = {
 - Manual approval for production deployment
 
 **Continuous Monitoring:**
+
 - Automated performance monitoring
 - Error tracking and alerting
 - User behavior analytics
@@ -1241,43 +1224,49 @@ export const authOptions: NextAuthOptions = {
 
 ---
 
-## 13. Deployment & Infrastructure
+## 13. Deployment and Infrastructure
 
 ### 13.1 Hosting Architecture
 
 **Infrastructure Components:**
 
 1. **Web Server:**
-   - Microsoft IIS 10 on Windows Server 2022
-   - Multiple application pools for isolation
-   - SSL/TLS certificate management
-   - URL rewriting and optimization
+
+    - Microsoft IIS 10 on Windows Server 2022
+    - Multiple application pools for isolation
+    - SSL/TLS certificate management
+    - URL rewriting and optimization
    
 2. **Application Server:**
-   - .NET 8 runtime
-   - Hosted as Windows Service or IIS application
-   - Application pool recycling and health monitoring
+
+    - .NET 8 runtime
+    - Hosted as Windows Service or IIS application
+    - Application pool recycling and health monitoring
    
 3. **Database Server:**
-   - Microsoft SQL Server 2022
-   - Database maintenance plans
-   - Automated backups
-   - Query performance monitoring
+
+    - Microsoft SQL Server 2022
+    - Database maintenance plans
+    - Automated backups
+    - Query performance monitoring
    
 4. **File Storage:**
-   - Windows file system with encryption
-   - Organized folder structure
-   - Regular backups to secondary storage
-   - Virus scanning integration
+
+    - Windows file system with encryption
+    - Organized folder structure
+    - Regular backups to secondary storage
+    - Virus scanning integration
 
 ### 13.2 Deployment Strategy
 
 **Blue-Green Deployment:**
+
 - Zero-downtime deployments
 - Quick rollback capability
 - Reduced deployment risk
 
 **Deployment Process:**
+
 1. Code review and approval
 2. Automated testing in CI/CD
 3. Deployment to staging environment
@@ -1289,48 +1278,55 @@ export const authOptions: NextAuthOptions = {
 ### 13.3 Environment Configuration
 
 **Development Environment:**
-- Local development setup
-- Docker containers (optional)
-- Mock integrations for testing
+
+    - Local development setup
+    - Docker containers (optional)
+    - Mock integrations for testing
 
 **Staging Environment:**
-- Mirror of production configuration
-- Test data and scenarios
-- Integration testing with KETO test environment
+
+    - Mirror of production configuration
+    - Test data and scenarios
+    - Integration testing with KETO test environment
 
 **Production Environment:**
-- High-availability configuration
-- Production data and security
-- Full integration with KETO production
-- Monitoring and alerting
+
+    - High-availability configuration
+    - Production data and security
+    - Full integration with KETO production
+    - Monitoring and alerting
 
 ### 13.4 Source Code Management
 
 **Version Control:**
-- Git repository (GitHub or Azure Repos)
-- Branch strategy: GitFlow or GitHub Flow
-- Pull request reviews
-- Automated code quality checks
+
+    - Git repository (GitHub or Azure Repos)
+    - Branch strategy: GitFlow or GitHub Flow
+    - Pull request reviews
+    - Automated code quality checks
 
 **Code Ownership:**
-- Complete source code provided to Rupertsland
-- Comprehensive code documentation
-- Architecture documentation
-- Deployment runbooks
+
+    - Complete source code provided to Rupertsland
+    - Comprehensive code documentation
+    - Architecture documentation
+    - Deployment runbooks
 
 **Knowledge Transfer:**
-- Code walkthrough sessions
-- Developer documentation
-- Architecture decision records (ADRs)
-- Ongoing support for in-house team
+
+    - Code walkthrough sessions
+    - Developer documentation
+    - Architecture decision records (ADRs)
+    - Ongoing support for in-house team
 
 ---
 
-## 14. Training & Documentation
+## 14. Training and Documentation
 
 ### 14.1 User Training
 
 **Student Portal Training:**
+
 - Video tutorials for key workflows
 - Interactive user guide
 - FAQ section
@@ -1338,11 +1334,12 @@ export const authOptions: NextAuthOptions = {
 - Live webinar sessions (optional)
 
 **Administrative Portal Training:**
+
 - Comprehensive staff training sessions (in-person or remote)
 - Role-specific training modules:
-  - Application reviewers
-  - Financial officers
-  - System administrators
+    - Application reviewers
+    - Financial officers
+    - System administrators
 - Hands-on practice in staging environment
 - Quick reference guides
 - Training recordings for future staff
@@ -1350,6 +1347,7 @@ export const authOptions: NextAuthOptions = {
 ### 14.2 Documentation Deliverables
 
 **Technical Documentation:**
+
 - System architecture documentation
 - API documentation (Swagger/OpenAPI)
 - Database schema documentation
@@ -1358,6 +1356,7 @@ export const authOptions: NextAuthOptions = {
 - Disaster recovery procedures
 
 **User Documentation:**
+
 - Student user guide
 - Administrator user guide
 - FAQ and troubleshooting guide
@@ -1365,6 +1364,7 @@ export const authOptions: NextAuthOptions = {
 - Help center content
 
 **Operations Documentation:**
+
 - Deployment guide
 - Configuration management guide
 - Backup and recovery procedures
@@ -1374,12 +1374,14 @@ export const authOptions: NextAuthOptions = {
 ### 14.3 Support & Maintenance
 
 **Warranty Period (90 Days Post-Launch):**
+
 - Bug fixes at no additional cost
 - Technical support via email and phone
 - Performance optimization
 - Minor enhancements as needed
 
 **Ongoing Support Options:**
+
 - Monthly support and maintenance retainer
 - On-demand support hours
 - Feature enhancement projects
@@ -1387,8 +1389,9 @@ export const authOptions: NextAuthOptions = {
 - Security updates and patches
 
 **Support Levels:**
-- **Critical:** Response within 2 hours, 24/7
-- **High:** Response within 4 hours, business hours
+
+- **Critical:** Response within 1 hour, 24/7
+- **High:** Response within 2 hours, business hours
 - **Medium:** Response within 1 business day
 - **Low:** Response within 3 business days
 
@@ -1400,29 +1403,26 @@ Innoviware Solutions' proposed solution delivers a modern, secure, and scalable 
 
 **Key Solution Highlights:**
 
-✅ **Modern Technology Stack:** Next.js 14 and .NET 8 provide cutting-edge performance and developer experience
+ **Modern Technology Stack:** Next.js 14 and .NET 8 provide cutting-edge performance and developer experience
 
-✅ **Seamless Integration:** Full integration with KETO and Rupertsland Identity Server
+**Seamless Integration:** Full integration with KETO and Rupertsland Identity Server
 
-✅ **Security & Privacy:** Multi-layered security with FOIP and PIPEDA compliance
+**Security & Privacy:** Multi-layered security with FOIP and PIPEDA compliance
 
-✅ **User-Friendly:** Intuitive interfaces for both students and staff
+**User-Friendly:** Intuitive interfaces for both students and staff
 
-✅ **Scalable Architecture:** Built to handle growing application volumes
+**Scalable Architecture:** Built to handle growing application volumes
 
-✅ **Accessible:** WCAG 2.1 AA compliant for inclusive access
+**Accessible:** WCAG 2.1 AA compliant for inclusive access
 
-✅ **Comprehensive Features:** All required functionality plus advanced reporting and analytics
+**Comprehensive Features:** All required functionality plus advanced reporting and analytics
 
-✅ **Full Source Code:** Complete ownership and control for Rupertsland
+**Full Source Code:** Complete ownership and control for Rupertsland
 
 We are confident that our solution, combined with our collaborative approach and commitment to Indigenous partnership, makes Innoviware Solutions the ideal partner for this important project.
 
 ---
 
-**Submitted by:**  
-Innoviware Solutions  
-November 12, 2025
 
 **For inquiries regarding this proposal, please contact:**  
 **Rahul Bains**  

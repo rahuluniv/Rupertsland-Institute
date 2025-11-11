@@ -8,20 +8,20 @@ Innoviware Solutions has successfully delivered innovative web applications and 
 
 Our portfolio demonstrates proven expertise in:
 
-- ✅ Educational technology platforms with assessment and reporting tools  
-- ✅ Multi-stakeholder portals serving students, institutions, and service providers  
-- ✅ Secure authentication and user management systems  
-- ✅ Complex application workflows and document management  
-- ✅ Dynamic data analysis and reporting dashboards  
-- ✅ Integration with multiple systems and databases  
-- ✅ Responsive, user-friendly interfaces for diverse audiences  
-- ✅ Scalable cloud-based solutions  
+-  Educational technology platforms with assessment and reporting tools  
+-  Multi-stakeholder portals serving students, institutions, and service providers  
+-  Secure authentication and user management systems  
+-  Complex application workflows and document management  
+-  Dynamic data analysis and reporting dashboards  
+-  Integration with multiple systems and databases  
+-  Responsive, user-friendly interfaces for diverse audiences  
+-  Scalable cloud-based solutions  
 
 ---
 
-## Featured Projects
+## Relevant Projects
 
-Below are detailed case studies of our two most relevant projects that demonstrate our capabilities for the Rupertsland Institute Online Student Application Platform.
+Below are detailed case studies of our most relevant projects that demonstrate our capabilities for the Rupertsland Institute Online Student Application Platform.
 
 ---
 
@@ -48,11 +48,7 @@ Below are detailed case studies of our two most relevant projects that demonstra
 
 ### Description
 
-RCAT (Reading Comprehension Assessment Tool) is a comprehensive digital platform designed to diagnose reading comprehension skills and identify specific learning gaps for students in grades 3–12.  
-It provides teachers with powerful tools to evaluate student reading comprehension through digital screening tests, level tests, and passage-based assessments.
-
-Teachers can schedule assessments for classes, groups, or individuals through a simple link-sharing system. Real-time reporting and analytics allow them to track student progress and adjust instruction accordingly.  
-
+RCAT (Reading Comprehension Assessment Tool) is a comprehensive digital platform designed to diagnose reading comprehension skills and identify specific learning gaps for students in grades 3–12. It provides teachers with powerful tools to evaluate student reading comprehension through digital screening tests, level tests, and passage-based assessments.Teachers can schedule assessments for classes, groups, or individuals through a simple link-sharing system. Real-time reporting and analytics allow them to track student progress and adjust instruction accordingly.  
 The system supports unlimited students per school and allows multiple assessments per year, all curriculum-aligned and providing actionable insights into comprehension skills such as inference, vocabulary, and text analysis.
 
 ---
@@ -60,27 +56,33 @@ The system supports unlimited students per school and allows multiple assessment
 ### Technologies Used
 
 **Frontend:**
-- React.js, HTML5/CSS3, JavaScript
+
+- React.js, JavaScript
 - Responsive framework for cross-device compatibility
 
 **Backend:**
+
 - .NET Framework & ASP.NET  
 - RESTful API architecture
 
 **Database:**
+
 - SQL Server  
 - Optimized design for assessment and student data
 
 **Authentication & Security:**
+
 - Secure user authentication  
 - Role-based access control (teachers, administrators, students)  
 - Data encryption and session protection  
 
 **Reporting & Analytics:**
+
 - Real-time progress tracking  
 - Dynamic data visualization and export  
 
 **Hosting:**
+
 - Cloud-based hosting with automated backup and high availability  
 
 ---
@@ -88,25 +90,30 @@ The system supports unlimited students per school and allows multiple assessment
 ### Key Features Delivered
 
 #### Digital Assessment Suite
+
 - Screening, level, and passage-based tests  
 - Multiple question types (MCQ, short answer, text response)
 
 #### Teacher Tools
+
 - Test scheduling and one-click sharing  
 - Group, class, or individual assignments  
 - Re-assessment for progress tracking  
 
 #### Secure Online Access
+
 - Browser-based; no installation  
 - Optimized for all devices  
 - Automatic save to prevent data loss  
 
 #### Curriculum Alignment
+
 - Provincial/national standards  
 - Skill-specific assessments  
 - Standards-based reporting  
 
 #### Dynamic Data Analysis
+
 - Real-time results  
 - Skill-level gap analysis  
 - Visual dashboards  
@@ -129,17 +136,19 @@ The system supports unlimited students per school and allows multiple assessment
 ### Results & Impact
 
 **Adoption & Usage:**
-- 50+ schools, 5,000+ students, 500+ teachers  
-- 15,000+ assessments in first two years  
-- 99.2% uptime  
+
+- 250+ schools, 100,000+ students, 500+ teachers  
+- 15,000+ assessments in first two years   
 
 **Educational Impact:**
+
 - 60% better identification of learning gaps  
 - 45% less admin time  
 - 80% faster access to results  
 - 90% teacher satisfaction  
 
 **Efficiency Gains:**
+
 - Automatic scoring  
 - Real-time reporting  
 - Paperless data management  
@@ -147,7 +156,7 @@ The system supports unlimited students per school and allows multiple assessment
 **Client Testimonial**
 
 > “RCAT has transformed how we assess reading comprehension in our district. The platform is intuitive for both teachers and students, and the real-time reporting gives us immediate insights into where our students need support.”  
-> — **Brigitta Goerres**, Founder, Edu-Best Educational Resources and Services  
+> — **Brigitta Goerres**, Owner, Edu-Best Educational Resources and Services  
 
 ---
 
@@ -184,33 +193,37 @@ The system supports unlimited students per school and allows multiple assessment
 
 ### Description
 
-Admicity bridges students seeking international education, agents representing them, and universities in North America.  
-It supports three user portals: **Students**, **Agents**, and **Universities**, each tailored for its respective workflow.  
-The system handles thousands of applications annually with advanced data privacy, security, and integrations.
+Admicity bridges students seeking international education, agents representing them, and universities in North America. It supports three user portals: **Students**, **Agents**, and **Universities**, each tailored for its respective workflow. The system handles thousands of applications annually with advanced data privacy, security, and integrations.
 
 ---
 
 ### Technologies Used
 
 **Frontend:**
+
 - Next.js 13, React 18, TypeScript, Tailwind CSS  
 - Progressive Web App (PWA) for mobile  
 
 **Backend:**
+
 - .NET 7 Web API, C#, RESTful Microservices  
 
 **Database:**
-- SQL Server 2022  
+
+- PostgresSQL
 - Stored procedures, full-text search  
 
 **Authentication:**
-- OAuth2, OIDC, MFA, JWT tokens  
+
+- OAuth2, JWT tokens  
 - Role-based access for multi-tenant architecture  
 
 **Integrations:**
-- University SIS, Payment gateways, Document verification, Email, Immigration DB  
+
+- University SIS, Payment gateways, Document verification, Email, IRCC Website 
 
 **Hosting:**
+
 - Azure cloud, Auto-scaling, CDN, Backups, 99.9% uptime  
 
 ---
@@ -218,24 +231,28 @@ The system handles thousands of applications annually with advanced data privacy
 ### Key Features Delivered
 
 #### Student Portal
+
 - University & program search  
 - Online applications with step-by-step wizard  
 - Document upload & fee payment  
 - Application tracking and status updates  
 
 #### Agent Portal
+
 - Multi-student management dashboard  
 - Commission and performance analytics  
 - CRM and communication tools  
 - White-label branding  
 
 #### University Portal
+
 - Application review and decision workflows  
 - Offer letter generation  
 - Integration with SIS systems  
 - Enrollment analytics  
 
 #### Admin Features
+
 - Platform analytics  
 - Role management  
 - Content and system configuration  
@@ -259,18 +276,21 @@ The system handles thousands of applications annually with advanced data privacy
 ### Results & Impact
 
 **Platform Adoption**
+
 - 100+ universities  
 - 200+ recruitment agents  
 - 15,000+ applications/year  
 - 60+ countries  
 
 **Efficiency**
+
 - 70% faster processing  
 - 85% less manual work  
 - 50% faster admissions decisions  
 - 95% application completion rate  
 
 **Business Outcomes**
+
 - $2.5M+ commissions  
 - 40% increase in enrollments  
 - 99.8% uptime  
@@ -279,7 +299,7 @@ The system handles thousands of applications annually with advanced data privacy
 **Client Testimonial**
 
 > “Innoviware Solutions built us more than just a platform—they built the infrastructure that powers our entire business model.”  
-> — **Michael Patterson**, CEO, Admicity Education Services  
+> — **Parth Patel**, Owner, Admicity Education Services and PS Defence
 
 ---
 
@@ -293,63 +313,6 @@ The system handles thousands of applications annually with advanced data privacy
 - Automated notifications and reporting dashboards  
 
 ---
-
-## Client References
-
-### Reference 1: RCAT Educational Assessment Platform
-
-![Edu-Best Logo](images/projects/edu-best-logo.png)
-
-**Contact:**  
-- **Name:** Brigitta Goerres  
-- **Title:** Founder & Educational Consultant  
-- **Organization:** Edu-Best Educational Resources and Services  
-- **Location:** Edmonton, Alberta  
-- **Project:** RCAT – Reading Comprehension Assessment Tool  
-- **Duration:** 12 months (2023–2024)  
-- **Focus:** K–12 Assessment Platform  
-
-**Project Outcomes:**
-- 50+ schools  
-- 5,000+ students annually  
-- 99.2% uptime  
-- 90% teacher satisfaction  
-
----
-
-### Reference 2: Admicity International Student Recruitment
-
-![Admicity Logo](images/projects/admicity-logo.png)
-
-**Contact:**  
-- **Name:** Michael Patterson  
-- **Title:** CEO  
-- **Organization:** Admicity Education Services  
-- **Location:** Canada  
-- **Project:** Admicity Recruitment Platform  
-- **Duration:** 18 months (2022–2024, ongoing)  
-- **Focus:** Multi-stakeholder education portal  
-
-**Project Outcomes:**
-- 100+ universities  
-- 200+ agent partners  
-- 15,000+ applications annually  
-- 99.8% uptime  
-
----
-
-## Technology Expertise Summary
-
-| Category | Technologies |
-|-----------|--------------|
-| **Frontend** | Next.js 13, React 18, TypeScript, Responsive Design, Accessibility |
-| **Backend** | .NET Framework, .NET 7, ASP.NET Core Web API, C#, Entity Framework |
-| **Database** | SQL Server 2019–2022, Database Design, Secure Storage |
-| **Security** | OIDC/OAuth2, MFA, RBAC, Data Encryption |
-| **Integration** | RESTful APIs, External Services, Payment & Email Systems |
-
----
-
 ## Why Our Experience Matters for RLI
 
 - Direct experience with **student application workflows**  
@@ -358,26 +321,5 @@ The system handles thousands of applications annually with advanced data privacy
 - Deep familiarity with **Next.js, .NET, SQL Server** stack  
 - Scalable, high-availability systems in education  
 - Demonstrated **on-time, within-budget delivery**  
-
----
-
-## Project Success Metrics
-
-| Metric | Achieved |
-|--------|-----------|
-| Delivery | 100% on-time, within budget |
-| Uptime | 99.5% average |
-| Client Satisfaction | 90%+ |
-| Security | Zero critical incidents |
-| Continuity | Ongoing support for all clients |
-
----
-
-## Conclusion
-
-Innoviware Solutions brings extensive experience developing secure, scalable education technology platforms.  
-Our work on **RCAT** and **Admicity** aligns perfectly with RLI’s requirements for the Online Student Application Platform.  
-
-We combine proven delivery, modern technology, and deep understanding of educational workflows to ensure successful implementation.
 
 ---

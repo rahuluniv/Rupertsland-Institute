@@ -27,7 +27,8 @@
 
 Innoviware Solutions proposes a **32-week implementation plan** to deliver the Online Student Application Platform for Rupertsland Institute. The project is structured in **six major phases**, each with clearly defined deliverables, milestones, and quality gates to ensure successful delivery by **August 1, 2026**.
 
-Our project approach emphasizes:
+**Our project approach emphasizes:**
+
 - **Agile methodology** with 2-week sprints
 - **Continuous stakeholder engagement** throughout development
 - **Incremental delivery** with regular demos and feedback
@@ -44,99 +45,110 @@ Our project approach emphasizes:
 #### Innoviware Solutions Team
 
 **Project Leadership:**
+
 - **Project Manager** (1 FTE)
-  - Overall project coordination
-  - Stakeholder management
-  - Schedule and budget management
-  - Risk and issue management
+
+    - Overall project coordination
+    - Stakeholder management
+    - Schedule and budget management
+    - Risk and issue management
 
 - **Technical Lead / Solution Architect** (1 FTE)
-  - Technical architecture and design
-  - Code quality oversight
-  - Technical decision making
-  - Integration design
+
+    - Technical architecture and design
+    - Code quality oversight
+    - Technical decision making
+    - Integration design
 
 **Development Team:**
+
 - **Senior .NET Developer** (2 FTEs)
-  - Backend API development
-  - Database design and optimization
-  - KETO integration
-  - Security implementation
+
+    - Backend API development
+    - Database design and optimization
+    - KETO integration
+    - Security implementation
 
 - **Senior Frontend Developer** (2 FTEs)
-  - Next.js development
-  - UI/UX implementation
-  - Responsive design
-  - Client-side integration
+
+    - Next.js development
+    - UI/UX implementation
+    - Responsive design
+    - Client-side integration
 
 - **Full-Stack Developer** (1 FTE)
-  - Supporting both frontend and backend
-  - API integration
-  - Testing support
-  - Documentation
+
+    - Supporting both frontend and backend
+    - API integration
+    - Testing support
+    - Documentation
 
 **Quality & Security:**
+
 - **QA Engineer** (1 FTE)
-  - Test planning and execution
-  - Automated testing
-  - UAT coordination
-  - Bug tracking and verification
+
+    - Test planning and execution
+    - Automated testing
+    - UAT coordination
+    - Bug tracking and verification
 
 - **Security Specialist** (0.5 FTE)
-  - Security architecture review
-  - Penetration testing
-  - Compliance verification
-  - Security documentation
+
+    - Security architecture review
+    - Penetration testing
+    - Compliance verification
+    - Security documentation
 
 **Design & Documentation:**
-- **UI/UX Designer** (0.5 FTE)
-  - User interface design
-  - User experience optimization
-  - Accessibility design
-  - Design system maintenance
 
-- **Technical Writer** (0.5 FTE)
-  - User documentation
-  - Technical documentation
-  - Training materials
-  - Help content
+- **UI/UX Designer** (0.5 FTE)
+
+    - User interface design
+    - User experience optimization
+    - Accessibility design
+    - Design system maintenance
+
 
 **DevOps & Infrastructure:**
+
 - **DevOps Engineer** (0.5 FTE)
-  - CI/CD pipeline setup
-  - Deployment automation
-  - Infrastructure configuration
-  - Monitoring setup
+
+    - CI/CD pipeline setup
+    - Deployment automation
+    - Infrastructure configuration
+    - Monitoring setup
 
 #### Rupertsland Institute Team
 
 **Project Stakeholders:**
-- **Project Sponsor** - Executive oversight and decision authority
-- **Product Owner** - Requirements definition and acceptance
-- **IT Manager** - Technical liaison and infrastructure support
-- **System Administrator** - KETO system and infrastructure expertise
-- **Application Reviewers** (2-3) - User acceptance testing and feedback
-- **Finance Officer** - Financial tracking requirements and testing
-- **Student Representatives** (2-3) - Student portal testing and feedback
+
+- **Project Sponsor** (1)
+
+    - Executive oversight
+    - Budget approval
+    - Strategic decisions
 
 ### 2.2 Decision-Making Framework
 
 **Decision Levels:**
 
 1. **Strategic Decisions** (Project Sponsor)
-   - Scope changes affecting budget/timeline
-   - Major architectural decisions
-   - Go/no-go decisions for phase progression
+
+    - Scope changes affecting budget/timeline
+    - Major architectural decisions
+    - Go/no-go decisions for phase progression
 
 2. **Tactical Decisions** (Product Owner + Project Manager)
-   - Feature prioritization
-   - Minor scope adjustments
-   - UAT acceptance
+
+    - Feature prioritization
+    - Minor scope adjustments
+    - UAT acceptance
 
 3. **Operational Decisions** (Technical Lead + IT Manager)
-   - Technical implementation details
-   - Tool and library selection
-   - Development practices
+
+    - Technical implementation details
+    - Tool and library selection
+    - Development practices
 
 ### 2.3 Meeting Cadence
 
@@ -183,9 +195,8 @@ The project is divided into **six major phases** over 32 weeks:
 - Set up development infrastructure
 - Conduct project kickoff
 
-#### Key Activities
-
 **Week 1 (Dec 1-7):**
+
 - [ ] Project kickoff meeting with all stakeholders
 - [ ] Establish communication channels (Slack/Teams, email lists)
 - [ ] Requirements validation workshop
@@ -195,6 +206,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] CI/CD pipeline initial setup
 
 **Week 2 (Dec 8-14):**
+
 - [ ] Database architecture design review
 - [ ] API architecture design review
 - [ ] UI/UX design workshop
@@ -204,6 +216,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] Risk assessment and mitigation planning
 
 #### Deliverables
+
 - ✅ Project Charter
 - ✅ Detailed Project Plan (this document)
 - ✅ Communication Plan
@@ -226,6 +239,7 @@ The project is divided into **six major phases** over 32 weeks:
 **Sprints:** Sprint 1-2
 
 #### Objectives
+
 - Build core technical foundation
 - Implement authentication and authorization
 - Establish database structure
@@ -235,6 +249,7 @@ The project is divided into **six major phases** over 32 weeks:
 #### Sprint 1 (Weeks 3-4: Dec 15-28)
 
 **Backend Development:**
+
 - [ ] .NET 8 Web API project structure setup
 - [ ] Entity Framework Core configuration
 - [ ] SQL Server 2022 database creation
@@ -247,6 +262,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] API versioning setup
 
 **Frontend Development:**
+
 - [ ] Next.js 14 project initialization
 - [ ] Project structure and routing setup
 - [ ] Tailwind CSS configuration
@@ -258,12 +274,14 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] State management setup (React Query)
 
 **DevOps:**
+
 - [ ] Automated build pipeline
 - [ ] Automated testing in CI/CD
 - [ ] Development environment deployment
 - [ ] Code quality checks (SonarQube)
 
 **Sprint 1 Deliverables:**
+
 - Working development environment
 - Basic project structure (frontend + backend)
 - Database schema (initial version)
@@ -272,6 +290,7 @@ The project is divided into **six major phases** over 32 weeks:
 #### Sprint 2 (Weeks 5-6: Dec 29 - Jan 11)
 
 **Backend Development:**
+
 - [ ] Identity Server integration (OIDC/OAUTH2)
 - [ ] JWT token validation middleware
 - [ ] User authentication service
@@ -284,6 +303,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] API documentation (Swagger)
 
 **Frontend Development:**
+
 - [ ] NextAuth.js integration with Rupertsland Identity Server
 - [ ] Authentication flows (login, logout, registration)
 - [ ] MFA implementation
@@ -294,19 +314,23 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] Authentication error handling
 
 **Security:**
+
 - [ ] Initial security audit
 - [ ] Encryption implementation (data at rest)
 - [ ] TLS/SSL configuration
 - [ ] Security testing (initial)
 
 **Sprint 2 Deliverables:**
+
 - Authentication and authorization fully functional
 - Secure API endpoints
 - Login/logout workflows working
 - MFA implementation complete
 
 #### Phase 1 Milestone
+
 **M1: Foundation Complete** (January 11, 2026)
+
 - Core infrastructure operational
 - Authentication working end-to-end
 - Database foundation established
@@ -328,6 +352,7 @@ The project is divided into **six major phases** over 32 weeks:
 #### Sprint 3 (Weeks 7-8: Jan 12-25)
 
 **Backend Development:**
+
 - [ ] Student profile API endpoints
 - [ ] Profile data validation
 - [ ] Document upload API
@@ -338,6 +363,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] Student data encryption (SIN, etc.)
 
 **Frontend Development:**
+
 - [ ] Student registration page
 - [ ] Email verification flow
 - [ ] Student dashboard (overview)
@@ -349,6 +375,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] Profile editing and update
 
 **Sprint 3 Deliverables:**
+
 - Student registration working
 - Profile creation and editing complete
 - Document upload functional
@@ -356,6 +383,7 @@ The project is divided into **six major phases** over 32 weeks:
 #### Sprint 4 (Weeks 9-10: Jan 26 - Feb 8)
 
 **Backend Development:**
+
 - [ ] Academic information API
 - [ ] Institution master data management
 - [ ] Program validation logic
@@ -367,6 +395,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] Notification templates
 
 **Frontend Development:**
+
 - [ ] Academic information form
 - [ ] Institution search/select component
 - [ ] Program selection component
@@ -378,6 +407,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] Auto-save functionality
 
 **Sprint 4 Deliverables:**
+
 - Academic information entry complete
 - Application wizard framework established
 - Draft saving functional
@@ -385,6 +415,7 @@ The project is divided into **six major phases** over 32 weeks:
 #### Sprint 5 (Weeks 11-12: Feb 9-22)
 
 **Backend Development:**
+
 - [ ] Financial information API
 - [ ] Funding calculation engine
 - [ ] Eligibility checking service
@@ -394,6 +425,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] Application history API
 
 **Frontend Development:**
+
 - [ ] Application wizard - Step 3: Financial Info
 - [ ] Application wizard - Step 4: Document Upload
 - [ ] Application wizard - Step 5: Review & Submit
@@ -405,6 +437,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] Application details view
 
 **Sprint 5 Deliverables:**
+
 - Complete application submission workflow
 - Application tracking functional
 - Email notifications working
@@ -412,6 +445,7 @@ The project is divided into **six major phases** over 32 weeks:
 #### Sprint 6 (Weeks 13-14: Feb 23 - Mar 8)
 
 **Backend Development:**
+
 - [ ] Notification preferences API
 - [ ] In-app notifications service
 - [ ] Message center API
@@ -420,6 +454,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] Student support ticket system (basic)
 
 **Frontend Development:**
+
 - [ ] Notification center component
 - [ ] Notification preferences page
 - [ ] Message center/inbox
@@ -431,6 +466,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] Student portal polish and refinement
 
 **Testing:**
+
 - [ ] Student portal end-to-end testing
 - [ ] User acceptance testing (students)
 - [ ] Accessibility testing
@@ -438,13 +474,16 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] Security testing
 
 **Sprint 6 Deliverables:**
+
 - Notification system complete
 - Document center functional
 - Help and support features
 - Student portal ready for UAT
 
 #### Phase 2 Milestone
+
 **M2: Student Portal Complete** (March 8, 2026)
+
 - Complete student registration and login
 - Full application submission workflow
 - Document upload and management
@@ -468,6 +507,7 @@ The project is divided into **six major phases** over 32 weeks:
 #### Sprint 7 (Weeks 15-16: Mar 9-22)
 
 **Backend Development:**
+
 - [ ] Admin authentication and authorization
 - [ ] Application listing API (with pagination)
 - [ ] Advanced filtering and search API
@@ -478,6 +518,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] Audit trail implementation
 
 **Frontend Development:**
+
 - [ ] Admin portal layout and navigation
 - [ ] Admin dashboard (overview)
 - [ ] Application queue/list view
@@ -488,6 +529,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] Bulk selection interface
 
 **Sprint 7 Deliverables:**
+
 - Admin portal framework
 - Application listing and search
 - Dashboard with key metrics
@@ -495,6 +537,7 @@ The project is divided into **six major phases** over 32 weeks:
 #### Sprint 8 (Weeks 17-18: Mar 23 - Apr 5)
 
 **Backend Development:**
+
 - [ ] Document verification API
 - [ ] Document approval/rejection workflow
 - [ ] Additional document request API
@@ -505,6 +548,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] Batch processing API
 
 **Frontend Development:**
+
 - [ ] Document viewer component
 - [ ] Document verification interface
 - [ ] Approval/rejection workflow UI
@@ -516,6 +560,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] Application review page (complete)
 
 **Sprint 8 Deliverables:**
+
 - Document verification complete
 - Application review workflow functional
 - Decision making tools ready
@@ -523,6 +568,7 @@ The project is divided into **six major phases** over 32 weeks:
 #### Sprint 9 (Weeks 19-20: Apr 6-19)
 
 **Backend Development:**
+
 - [ ] Student management API
 - [ ] User management API
 - [ ] Role and permissions API
@@ -533,6 +579,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] Export services (Excel, CSV)
 
 **Frontend Development:**
+
 - [ ] Student account management pages
 - [ ] Student search and profile view
 - [ ] Internal notes and flags
@@ -544,6 +591,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] Payment tracking interface
 
 **Sprint 9 Deliverables:**
+
 - Student account management complete
 - User and role management functional
 - Financial tracking operational
@@ -551,6 +599,7 @@ The project is divided into **six major phases** over 32 weeks:
 #### Sprint 10 (Weeks 21-22: Apr 20 - May 3)
 
 **Backend Development:**
+
 - [ ] Reporting API (pre-built reports)
 - [ ] Custom report builder API
 - [ ] Data export services
@@ -561,6 +610,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] System configuration API
 
 **Frontend Development:**
+
 - [ ] Reporting dashboard
 - [ ] Pre-built reports interface
 - [ ] Custom report builder
@@ -572,18 +622,22 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] Admin portal polish and refinement
 
 **Testing:**
+
 - [ ] Admin portal end-to-end testing
 - [ ] User acceptance testing (staff)
 - [ ] Performance testing (admin workflows)
 - [ ] Security testing (authorization)
 
 **Sprint 10 Deliverables:**
+
 - Complete reporting and analytics
 - System configuration tools
 - Admin portal ready for UAT
 
 #### Phase 3 Milestone
+
 **M3: Administrative Portal Complete** (May 3, 2026)
+
 - Application management fully functional
 - Document verification and approval workflows
 - User and role management
@@ -598,6 +652,7 @@ The project is divided into **six major phases** over 32 weeks:
 **Sprints:** Sprint 11-13
 
 #### Objectives
+
 - Complete KETO system integration
 - Optimize performance and scalability
 - Implement advanced features
@@ -607,6 +662,7 @@ The project is divided into **six major phases** over 32 weeks:
 #### Sprint 11 (Weeks 23-24: May 4-17)
 
 **Backend Development:**
+
 - [ ] KETO API integration layer
 - [ ] Data mapping and transformation
 - [ ] Bi-directional synchronization
@@ -617,18 +673,21 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] Webhook implementation (if applicable)
 
 **Frontend Development:**
+
 - [ ] Integration status indicators
 - [ ] Sync error notifications
 - [ ] Manual sync triggers (admin)
 - [ ] Integration health dashboard
 
 **Testing:**
+
 - [ ] KETO integration testing
 - [ ] End-to-end integration scenarios
 - [ ] Data integrity verification
 - [ ] Error handling and recovery testing
 
 **Sprint 11 Deliverables:**
+
 - KETO integration functional
 - Bi-directional data sync working
 - Integration monitoring in place
@@ -636,6 +695,7 @@ The project is divided into **six major phases** over 32 weeks:
 #### Sprint 12 (Weeks 25-26: May 18-31)
 
 **Backend Development:**
+
 - [ ] Performance optimization
 - [ ] Database query optimization
 - [ ] API response caching
@@ -645,6 +705,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] Memory management improvements
 
 **Frontend Development:**
+
 - [ ] Frontend performance optimization
 - [ ] Code splitting and lazy loading
 - [ ] Image optimization
@@ -654,6 +715,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] Offline capability (basic)
 
 **Infrastructure:**
+
 - [ ] Load balancing configuration
 - [ ] Database connection pooling
 - [ ] Application pool optimization
@@ -661,6 +723,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] CDN setup (if applicable)
 
 **Sprint 12 Deliverables:**
+
 - Performance targets achieved
 - Scalability testing passed
 - Load testing completed
@@ -668,6 +731,7 @@ The project is divided into **six major phases** over 32 weeks:
 #### Sprint 13 (Weeks 27-28: Jun 1-14)
 
 **Advanced Features:**
+
 - [ ] Advanced search functionality
 - [ ] Export/import tools
 - [ ] Data analytics enhancements
@@ -676,6 +740,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] Internationalization preparation (future)
 
 **Security:**
+
 - [ ] Comprehensive security audit
 - [ ] Penetration testing
 - [ ] Vulnerability assessment
@@ -683,6 +748,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] Compliance verification (FOIP, PIPEDA)
 
 **Documentation:**
+
 - [ ] API documentation (complete)
 - [ ] Technical architecture documentation
 - [ ] Database documentation
@@ -690,6 +756,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] Security documentation
 
 **Sprint 13 Deliverables:**
+
 - Advanced features implemented
 - Security audit completed
 - Technical documentation complete
@@ -709,6 +776,7 @@ The project is divided into **six major phases** over 32 weeks:
 **Sprints:** Sprint 14-15
 
 #### Objectives
+
 - Complete comprehensive testing
 - Conduct user acceptance testing
 - Deliver training to all users
@@ -719,6 +787,7 @@ The project is divided into **six major phases** over 32 weeks:
 #### Sprint 14 (Weeks 29-30: Jun 15-28)
 
 **Testing Activities:**
+
 - [ ] System integration testing (complete)
 - [ ] End-to-end testing (all workflows)
 - [ ] Regression testing
@@ -731,6 +800,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] Disaster recovery testing
 
 **User Acceptance Testing:**
+
 - [ ] UAT environment setup
 - [ ] UAT test cases preparation
 - [ ] Student UAT sessions (2-3 students)
@@ -739,6 +809,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] UAT sign-off
 
 **Documentation:**
+
 - [ ] Student user guide (complete)
 - [ ] Administrator user guide (complete)
 - [ ] FAQ and troubleshooting guide
@@ -747,6 +818,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] Release notes
 
 **Sprint 14 Deliverables:**
+
 - All testing completed
 - UAT passed with sign-off
 - User documentation complete
@@ -754,28 +826,30 @@ The project is divided into **six major phases** over 32 weeks:
 #### Sprint 15 (Weeks 31-32: Jun 29 - Jul 12)
 
 **Training:**
+
 - [ ] Training materials preparation
 - [ ] Training environment setup
 - [ ] Student portal training sessions
-  - [ ] Video tutorials
-  - [ ] Live webinar (optional)
-  - [ ] FAQ sessions
+    - [ ] Video tutorials
+    - [ ] Live webinar (optional)
+    - [ ] FAQ sessions
   
 - [ ] Administrative staff training
-  - [ ] Application reviewer training (4 hours)
-  - [ ] Financial officer training (2 hours)
-  - [ ] System administrator training (4 hours)
-  - [ ] Management overview (1 hour)
-  - [ ] Hands-on practice sessions
+    - [ ] Application reviewer training (4 hours)
+    - [ ] Financial officer training (2 hours)
+    - [ ] System administrator training (4 hours)
+    - [ ] Management overview (1 hour)
+    - [ ] Hands-on practice sessions
   
 - [ ] IT staff technical training
-  - [ ] System architecture overview
-  - [ ] Deployment procedures
-  - [ ] Maintenance procedures
-  - [ ] Troubleshooting guide
-  - [ ] Source code walkthrough
+    - [ ] System architecture overview
+    - [ ] Deployment procedures
+    - [ ] Maintenance procedures
+    - [ ] Troubleshooting guide
+    - [ ] Source code walkthrough
 
 **Production Preparation:**
+
 - [ ] Production environment setup
 - [ ] Production database setup
 - [ ] SSL certificate installation
@@ -787,6 +861,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] Production smoke testing
 
 **Deployment Planning:**
+
 - [ ] Deployment runbook finalization
 - [ ] Rollback procedures
 - [ ] Go-live checklist
@@ -794,6 +869,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] Communication plan for users
 
 **Sprint 15 Deliverables:**
+
 - All training completed
 - Production environment ready
 - Deployment plan finalized
@@ -801,6 +877,7 @@ The project is divided into **six major phases** over 32 weeks:
 
 #### Phase 5 Milestone
 **M5: Ready for Production** (July 12, 2026)
+
 - All testing passed
 - UAT sign-off received
 - Training completed
@@ -811,12 +888,14 @@ The project is divided into **six major phases** over 32 weeks:
 ---
 
 ### Phase 6: Go-Live & Stabilization
+
 **Duration:** 2-3 weeks (July 13 - August 1, 2026)  
 **Target:** Soft launch → Full production
 
 #### Go-Live Strategy
 
 **Soft Launch (July 13-19):**
+
 - [ ] Deploy to production
 - [ ] Limited user pilot (25-50 students)
 - [ ] Monitor system performance
@@ -825,6 +904,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] 24/7 support coverage
 
 **Full Launch (July 20):**
+
 - [ ] Open to all students
 - [ ] Communication campaign launch
 - [ ] User support channels active
@@ -832,6 +912,7 @@ The project is divided into **six major phases** over 32 weeks:
 - [ ] Daily status meetings
 
 **Post-Launch (July 20 - Aug 1):**
+
 - [ ] Continuous monitoring
 - [ ] Performance optimization
 - [ ] Bug fixes (priority-based)
@@ -842,12 +923,14 @@ The project is divided into **six major phases** over 32 weeks:
 #### Support Coverage
 
 **Week 1 (July 13-19):**
+
 - 24/7 support coverage
 - On-call technical team
 - Daily status reports
 - Immediate issue resolution
 
 **Weeks 2-3 (July 20 - Aug 1):**
+
 - Business hours support (8am-6pm)
 - On-call for critical issues
 - Weekly status reports
@@ -855,6 +938,7 @@ The project is divided into **six major phases** over 32 weeks:
 
 #### Project Milestone
 **M6: Production Launch Successful** (August 1, 2026)
+
 - System live and stable
 - Users successfully onboarded
 - Performance targets met
@@ -1044,17 +1128,20 @@ M0: 12/14  M1: 01/11  M2: 03/08  M3: 05/03  M4: 06/14  M5: 07/12  M6: 08/01
 ### Risk Response Plan
 
 **High-Priority Risks (R1, R2, R6, R7):**
+
 - Weekly risk review in technical sync meetings
 - Immediate escalation procedures
 - Dedicated mitigation activities in sprint planning
 - Contingency budget allocated (10% of total)
 
 **Medium-Priority Risks (R3, R4, R5, R8):**
+
 - Bi-weekly risk review in sprint retrospectives
 - Proactive monitoring and early warning indicators
 - Flexible planning to accommodate changes
 
 **Low-Priority Risks (R9, R10):**
+
 - Monthly risk review
 - Standard mitigation through best practices
 
@@ -1076,6 +1163,7 @@ M0: 12/14  M1: 01/11  M2: 03/08  M3: 05/03  M4: 06/14  M5: 07/12  M6: 08/01
 ### Communication Channels
 
 **Primary Channels:**
+
 - **Microsoft Teams / Slack:** Daily communication, quick questions
 - **Email:** Formal communications, status reports, documentation
 - **Video Conferencing:** Sprint reviews, meetings, demos
@@ -1085,6 +1173,7 @@ M0: 12/14  M1: 01/11  M2: 03/08  M3: 05/03  M4: 06/14  M5: 07/12  M6: 08/01
 ### Status Reporting
 
 **Weekly Status Report (Email):**
+
 - Accomplishments this week
 - Planned activities next week
 - Risks and issues
@@ -1092,6 +1181,7 @@ M0: 12/14  M1: 01/11  M2: 03/08  M3: 05/03  M4: 06/14  M5: 07/12  M6: 08/01
 - Action items
 
 **Monthly Executive Summary:**
+
 - Phase progress overview
 - Milestone achievement
 - Budget summary
@@ -1107,6 +1197,7 @@ M0: 12/14  M1: 01/11  M2: 03/08  M3: 05/03  M4: 06/14  M5: 07/12  M6: 08/01
 Each phase must pass defined quality gates before proceeding:
 
 #### Phase 1: Foundation
+
 - [ ] Authentication flow tested end-to-end
 - [ ] Database schema reviewed and approved
 - [ ] CI/CD pipeline executing successfully
@@ -1115,6 +1206,7 @@ Each phase must pass defined quality gates before proceeding:
 - [ ] Technical architecture approved
 
 #### Phase 2: Student Portal
+
 - [ ] All student workflows tested
 - [ ] Accessibility testing passed (WCAG 2.1 AA)
 - [ ] Performance testing passed (load times < 2s)
@@ -1123,6 +1215,7 @@ Each phase must pass defined quality gates before proceeding:
 - [ ] Code coverage > 75%
 
 #### Phase 3: Administrative Portal
+
 - [ ] All admin workflows tested
 - [ ] Reporting accuracy verified
 - [ ] Performance testing passed (complex queries < 3s)
@@ -1131,6 +1224,7 @@ Each phase must pass defined quality gates before proceeding:
 - [ ] Code coverage > 75%
 
 #### Phase 4: Integration
+
 - [ ] KETO integration tested with real data
 - [ ] Data synchronization verified
 - [ ] Performance targets achieved
@@ -1139,6 +1233,7 @@ Each phase must pass defined quality gates before proceeding:
 - [ ] Integration testing complete
 
 #### Phase 5: Deployment
+
 - [ ] All UAT sign-offs received
 - [ ] Production environment validated
 - [ ] Disaster recovery tested
@@ -1149,6 +1244,7 @@ Each phase must pass defined quality gates before proceeding:
 ### Code Quality Standards
 
 **Mandatory Requirements:**
+
 - Code reviews for all pull requests
 - No critical or high-severity vulnerabilities
 - Code coverage > 75% for business logic
@@ -1165,6 +1261,7 @@ Each phase must pass defined quality gates before proceeding:
 ### Change Control Process
 
 **Minor Changes (< 1 week impact):**
+
 1. Developer/Designer identifies change need
 2. Technical Lead reviews and approves
 3. Product Owner notified
@@ -1172,6 +1269,7 @@ Each phase must pass defined quality gates before proceeding:
 5. Documented in release notes
 
 **Major Changes (> 1 week impact):**
+
 1. Change request submitted to Project Manager
 2. Impact assessment (schedule, budget, scope)
 3. Review by Project Manager and Technical Lead
@@ -1184,6 +1282,7 @@ Each phase must pass defined quality gates before proceeding:
 ### Change Request Template
 
 **Change Request Form:**
+
 - CR ID and Date
 - Requestor
 - Description of change
@@ -1204,43 +1303,49 @@ Each phase must pass defined quality gates before proceeding:
 The project will be considered successful if:
 
 **Functional Success:**
-- ✅ All required features from RFP implemented
-- ✅ Student portal enables complete application submission
-- ✅ Administrative portal supports full review workflow
-- ✅ KETO integration operational and reliable
-- ✅ Reporting and analytics functional
-- ✅ All UAT test cases passed
+
+-  All required features from RFP implemented
+-  Student portal enables complete application submission
+-  Administrative portal supports full review workflow
+-  KETO integration operational and reliable
+-  Reporting and analytics functional
+-  All UAT test cases passed
 
 **Performance Success:**
-- ✅ Page load times < 2 seconds (95th percentile)
-- ✅ API response times < 500ms (95th percentile)
-- ✅ System supports 500+ concurrent users
-- ✅ 99.5% uptime during business hours
-- ✅ Document upload success rate > 99%
+
+-  Page load times < 2 seconds (95th percentile)
+-  API response times < 500ms (95th percentile)
+-  System supports 500+ concurrent users
+-  99.5% uptime during business hours
+-  Document upload success rate > 99%
 
 **Security & Compliance:**
-- ✅ Zero critical or high security vulnerabilities
-- ✅ FOIP and PIPEDA compliance verified
-- ✅ WCAG 2.1 AA accessibility compliance
-- ✅ Security audit passed
-- ✅ Penetration test passed
+
+-  Zero critical or high security vulnerabilities
+-  FOIP and PIPEDA compliance verified
+-  WCAG 2.1 AA accessibility compliance
+-  Security audit passed
+-  Penetration test passed
 
 **User Satisfaction:**
-- ✅ Student satisfaction > 80% (post-launch survey)
-- ✅ Staff efficiency improvement > 30%
-- ✅ Application processing time reduced by > 40%
-- ✅ Support tickets < 5% of active users
+
+-  Student satisfaction > 80% (post-launch survey)
+-  Staff efficiency improvement > 30%
+-  Application processing time reduced by > 40%
+-  Support tickets < 5% of active users
 
 **Project Execution:**
-- ✅ Delivered by August 1, 2026
-- ✅ Within approved budget (+/- 10%)
-- ✅ All training completed
-- ✅ Documentation delivered
-- ✅ Knowledge transfer successful
+
+-  Delivered by August 1, 2026
+-  Within approved budget (+/- 10%)
+-  All training completed
+-  Documentation delivered
+-  Knowledge transfer successful
 
 ### Key Performance Indicators (KPIs)
 
 **During Development:**
+
 - Sprint velocity consistency (±15%)
 - Code quality metrics maintained
 - Defect discovery rate trending down
@@ -1248,6 +1353,7 @@ The project will be considered successful if:
 - Stakeholder satisfaction score > 4/5
 
 **Post-Launch (First 3 Months):**
+
 - System availability > 99.5%
 - Average application processing time
 - User adoption rate
@@ -1261,6 +1367,7 @@ The project will be considered successful if:
 ### Warranty Period (90 Days)
 
 **Included Support (August 1 - October 31, 2026):**
+
 - Bug fixes at no additional cost
 - Technical support via email and phone
 - Performance monitoring and optimization
@@ -1269,6 +1376,7 @@ The project will be considered successful if:
 - Bi-weekly check-ins for months 2-3
 
 **Support SLAs During Warranty:**
+
 - Critical issues: 2-hour response, 24/7
 - High priority: 4-hour response, business hours
 - Medium priority: 1 business day
@@ -1277,6 +1385,7 @@ The project will be considered successful if:
 ### Ongoing Support Options
 
 **Post-Warranty Support Packages:**
+
 - Monthly retainer for ongoing support and maintenance
 - On-demand support hours
 - Feature enhancement projects
@@ -1286,6 +1395,7 @@ The project will be considered successful if:
 ### Knowledge Transfer
 
 **Rupertsland Team Enablement:**
+
 - Source code repository access
 - Technical documentation
 - Architecture walkthroughs
@@ -1299,27 +1409,18 @@ The project will be considered successful if:
 
 This comprehensive project plan provides a clear roadmap for delivering the Online Student Application Platform by August 1, 2026. Our structured approach ensures:
 
-✅ **Predictable Delivery** - Clear phases, sprints, and milestones  
-✅ **Quality Assurance** - Quality gates at every phase  
-✅ **Risk Management** - Proactive identification and mitigation  
-✅ **Stakeholder Engagement** - Regular communication and feedback  
-✅ **Successful Adoption** - Comprehensive training and support  
-✅ **Long-Term Success** - Knowledge transfer and documentation
+ **Predictable Delivery** - Clear phases, sprints, and milestones  
+ **Quality Assurance** - Quality gates at every phase  
+ **Risk Management** - Proactive identification and mitigation  
+ **Stakeholder Engagement** - Regular communication and feedback  
+ **Successful Adoption** - Comprehensive training and support  
+ **Long-Term Success** - Knowledge transfer and documentation
 
 Innoviware Solutions is committed to delivering this project on time, within budget, and exceeding quality expectations. Our agile approach provides flexibility to adapt to changing needs while maintaining focus on the core objectives.
 
 We look forward to partnering with Rupertsland Institute to bring this important platform to life and support Métis students across Alberta in achieving their educational goals.
 
 ---
-
-**Submitted by:**  
-Innoviware Solutions  
-November 12, 2025
-
-**Project Plan Prepared by:**  
-[Project Manager Name]  
-[Email]  
-[Phone]
 
 **For questions about this project plan:**  
 **Rahul Bains**  
