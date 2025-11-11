@@ -269,9 +269,6 @@ We look forward to the opportunity to discuss our proposal in detail and demonst
 
 ---
 
-**Submitted by:**  
-Innoviware Solutions  
-[Date: November 11, 2025]
 
 **For inquiries regarding this proposal, please contact:**  
 **Rahul Bains**  

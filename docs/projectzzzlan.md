@@ -1,6 +1,5 @@
 # Project Plan & Timeline
 
-**Date:** November 12, 2025  
 **Project Duration:** 32 Weeks (8 Months)  
 **Project Start Date:** December 1, 2025  
 **Anticipated Completion:** August 1, 2026
