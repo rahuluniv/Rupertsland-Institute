@@ -3,7 +3,7 @@
 <table style="width:100%; border-collapse:collapse;">
   <tr>
     <td style="width:220px; vertical-align:top; padding:8px;">
-      <img src="/assets/Rahul.jpeg" alt="Rahul" style="width:180px; border-radius:9999px; display:block; margin-bottom:8px;">
+      <img src='/assets/Rahul.jpeg' alt="Rahul" style="width:180px; border-radius:9999px; display:block; margin-bottom:8px;">
       <strong>Malhar</strong><br>
       <em>Backend Developer</em>
       <div style="margin-top:8px;">
@@ -21,7 +21,7 @@
 <table style="width:100%; border-collapse:collapse;">
   <tr>
     <td style="width:220px; vertical-align:top; padding:8px;">
-      <img src="/assets/Malhar.jpeg" alt="Malhar" style="width:180px; border-radius:9999px; display:block; margin-bottom:8px;">
+      <img src= '/assets/Malhar.jpeg' alt="Malhar" style="width:180px; border-radius:9999px; display:block; margin-bottom:8px;">
       <strong>Malhar</strong><br>
       <em>Backend Developer</em>
       <div style="margin-top:8px;">
