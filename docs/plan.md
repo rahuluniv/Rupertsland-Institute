@@ -1,9 +1,6 @@
 # Proposed Solution 
 ## Online Student Application Platform for Rupertsland Institute
 
-**Submitted by:** Innoviware Solutions  
-**Project:** Online Student Application Platform Development  
-**Date:** November 12, 2025
 
 ---
 

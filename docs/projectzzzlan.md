@@ -1,8 +1,5 @@
 # Project Plan & Timeline
-## Online Student Application Platform for Rupertsland Institute
 
-**Submitted by:** Innoviware Solutions  
-**Project:** Online Student Application Platform Development  
 **Date:** November 12, 2025  
 **Project Duration:** 32 Weeks (8 Months)  
 **Project Start Date:** December 1, 2025  

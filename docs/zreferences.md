@@ -1,9 +1,4 @@
 # References & Past Projects
-## Innoviware Solutions - Project Portfolio
-
-**Submitted by:** Innoviware Solutions  
-**Date:** November 12, 2025  
-**For:** Rupertsland Institute RFP - Online Student Application Platform
 
 ---
 
