@@ -5,5 +5,3 @@
 **Primary Contact:** Rahul Bains (Project Lead) · [rahul@innoviwaresolutions.com](mailto:rahul@innoviwaresolutions.com)
 
 **Date:** November 11, 2025
-
-### Executive Summary
