@@ -1,12 +1,12 @@
-site_name: Source One ERP Proposal
-site_description: A proposal for an ERP system for Source One.
-site_url: https://www.sourceone.global/
+site_name: Proposal for Rupertsland Institute
+site_description: Proposal – Online Student Application Platform for Rupertsland Institute (RLI)
+site_url: https://www.rupertsland.org/
 theme:
   name: material
   font:
     text: Merriweather Sans
     code: Red Hat Mono
-  logo: assets/logo.png
+  logo: assets/logo.svg
   favicon: assets/favicon.ico
   features:
     - navigation.footer
