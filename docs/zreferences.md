@@ -68,12 +68,12 @@ The system supports unlimited students per school and allows multiple assessment
 
 **Backend:**
 
-- .NET Framework & ASP.NET  
-- RESTful API architecture
+- PHP (Laravel Framework)
+
 
 **Database:**
 
-- SQL Server  
+- MariaDB / MySQL
 - Optimized design for assessment and student data
 
 **Authentication & Security:**
@@ -205,7 +205,7 @@ Admicity bridges students seeking international education, agents representing t
 
 **Frontend:**
 
--  React 18, TypeScript, Tailwind CSS  
+- React 18, TypeScript, Tailwind CSS  
 - Progressive Web App (PWA) for mobile  
 
 **Backend:**
