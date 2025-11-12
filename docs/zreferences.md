@@ -9,7 +9,7 @@ Innoviware Solutions has successfully delivered innovative web applications and 
 Our portfolio demonstrates proven expertise in:
 
 -  Educational technology platforms with assessment and reporting tools  
--  Multi-stakeholder portals serving students, institutions, and service providers  
+-  Multi-stakeholder portals serving students, institutions and service providers  
 -  Secure authentication and user management systems  
 -  Complex application workflows and document management  
 -  Dynamic data analysis and reporting dashboards  
@@ -36,13 +36,19 @@ Below are detailed case studies of our most relevant projects that demonstrate o
 **Users:** Teachers and Students (Grades 3–12)  
 **Geographic Reach:** Schools across Alberta and Western Canada  
 
-![RCAT Platform](images/projects/rcat-assessment-interface.png)  
-*Digital assessment platform showing test administration interface*
-
-![RCAT Dashboard](images/projects/rcat-teacher-dashboard.png)  
-*Teacher dashboard with dynamic data analysis and student progress reporting*
-
 **Website:** [https://edu-best.com/](https://edu-best.com/)
+
+![RCAT Platform](assets/Edubest1.png)
+
+![RCAT Platform](assets/Edubest2.png)
+
+![RCAT Platform](assets/Edubest3.png)
+
+![RCAT Platform](assets/Edubest4.png)
+
+![RCAT Platform](assets/Edubest5.png)
+
+![RCAT Platform](assets/Edubest6.png)
 
 ---
 
@@ -176,16 +182,14 @@ The system supports unlimited students per school and allows multiple assessment
 
 **Client:** Admicity Education Services  
 **Industry:** International Education / Student Recruitment  
-**Project Duration:** 18 months (ongoing)  
+**Project Duration:** 5 months  
 **Users:** Students, Educational Agents, Universities  
-**Scale:** 100+ Universities, 200+ Agents, 10,000+ Students  
-**Regions:** India, Southeast Asia, Middle East → Canada & USA  
+**Scale:**  90+ Agents, 25,000+ Students  
+**Regions:** Southeast Asia, Middle East → Canada & USA  
 
-![Admicity Portal](images/projects/admicity-student-portal.png)  
-*Student application portal showing program search and tracking*
+> **Note:** Access, Visual assets or screenshots are not available due to a Non-Disclosure Agreement (NDA) with the client but Client Reference can be provided upon request.
 
-![Agent Dashboard](images/projects/admicity-agent-dashboard.png)  
-*Agent dashboard for managing student applications and partnerships*
+![Admicity's Internal Platform](assets/admicity.png)
 
 **Website:** [https://www.admicity.com/](https://www.admicity.com/)
 
@@ -201,7 +205,7 @@ Admicity bridges students seeking international education, agents representing t
 
 **Frontend:**
 
-- Next.js 13, React 18, TypeScript, Tailwind CSS  
+-  React 18, TypeScript, Tailwind CSS  
 - Progressive Web App (PWA) for mobile  
 
 **Backend:**
@@ -246,8 +250,7 @@ Admicity bridges students seeking international education, agents representing t
 
 #### University Portal
 
-- Application review and decision workflows  
-- Offer letter generation  
+- Application review and decision workflows   
 - Integration with SIS systems  
 - Enrollment analytics  
 
@@ -277,24 +280,10 @@ Admicity bridges students seeking international education, agents representing t
 
 **Platform Adoption**
 
-- 100+ universities  
-- 200+ recruitment agents  
-- 15,000+ applications/year  
+- 90+ recruitment agents  
+- 25,000+ applications/year  
 - 60+ countries  
 
-**Efficiency**
-
-- 70% faster processing  
-- 85% less manual work  
-- 50% faster admissions decisions  
-- 95% application completion rate  
-
-**Business Outcomes**
-
-- $2.5M+ commissions  
-- 40% increase in enrollments  
-- 99.8% uptime  
-- Zero data breaches  
 
 **Client Testimonial**
 
@@ -308,18 +297,7 @@ Admicity bridges students seeking international education, agents representing t
 - Multi-user portals (students & administrators)  
 - Secure document management  
 - Application workflows and status tracking  
-- Integration with external systems (KETO equivalent)  
-- Next.js + .NET + SQL Server + OAuth2 stack match  
+- Integration with external systems (KETO equivalent)   
 - Automated notifications and reporting dashboards  
-
----
-## Why Our Experience Matters for RLI
-
-- Direct experience with **student application workflows**  
-- Proven **multi-user portal architectures**  
-- Expertise in **document management** and **data privacy**  
-- Deep familiarity with **Next.js, .NET, SQL Server** stack  
-- Scalable, high-availability systems in education  
-- Demonstrated **on-time, within-budget delivery**  
 
 ---
