@@ -5,7 +5,9 @@
 
 ## 1. Executive Summary
 
-Innoviware Solutions is a leading IT consulting and services provider specializing in delivering innovative and customized digital solutions to businesses and organizations of all sizes. With our core mission of "Transforming Ideas Into Digital Reality," we combine technical excellence, customer-centric approach and proven methodologies to help our clients achieve their technological goals through expert consultation and robust service offerings.
+Innoviware Solutions is a leading IT consulting and services provider specializing in delivering innovative and customized digital solutions to businesses and organizations of all sizes. With our core mission of "Transforming Ideas Into Digital Reality," we combine technical excellence, customer-centric approach and proven methodologies to help our clients achieve their technological goals through expert consultation and robust service offerings. We are headquartered in Edmonton, Alberta, and have a strong track record of successfully delivering complex web applications, enterprise systems and cloud solutions across various industries. Innoviware Solutions was founded in 2022 by a team of experienced software professionals committed to providing high-quality IT services that drive business growth and operational efficiency.
+
+We are a Team of 11 dedicated professionals with expertise in software development, project management, quality assurance, UI/UX design and IT consulting. Our team members bring diverse skills and experiences, enabling us to tackle complex challenges and deliver tailored solutions that meet our client's unique needs.
 
 We are pleased to submit our proposal for the development of Rupertsland Institute's Online Student Application Platform, a project that aligns perfectly with our expertise in creating secure, user-friendly web applications that serve diverse communities and stakeholders.
 
