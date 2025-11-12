@@ -301,3 +301,356 @@ Admicity bridges students seeking international education, agents representing t
 - Automated notifications and reporting dashboards  
 
 ---
+
+## Project 3: LearnZapp – Mobile Learning Platform for Global Certification Exams
+
+### Description
+
+LearnZapp is a comprehensive mobile learning ecosystem built to help professionals prepare for global certification exams across diverse industries — from cybersecurity and cloud security to project management, IT, HR, and finance.
+The platform hosts a suite of **10+ mobile applications**, each tailored for a specific certification such as **CISSP, CCSP, SSCP, CISA, CISM, PMP, CCNA, CCNP, HRCI/SHRM, SIE**, and **Series Exams**.
+
+With **50,000+ cumulative downloads** and an **average 4.5★ rating** on Google Play for its flagship “CISSP-CCSP-SSCP” app, LearnZapp empowers professionals and students with structured exam preparation, progress tracking, and personalized learning tools.
+
+![LearnZapp Platform](assets/learn1.jpeg)
+
+### Technologies Used
+
+**Frontend:**
+
+* React Native (iOS & Android)
+* Offline-first architecture with local caching
+* Responsive UI optimized for study sessions
+
+**Backend:**
+
+* Node.js (Express), REST APIs
+* Microservices for exam content, scoring, and analytics
+
+**Database:**
+
+* MongoDB
+* Optimized indexing for fast question retrieval and progress tracking
+
+**Authentication:**
+
+* JWT-based secure login
+* Role-based access (User, Admin, Content Author)
+
+**Integrations:**
+
+* In-App Purchases & Subscription APIs (Google Play, Apple Store)
+* Analytics SDK for engagement tracking
+* Push notifications and update delivery
+
+**Hosting:**
+
+* AWS Cloud (S3, EC2, CloudFront, RDS)
+* CI/CD pipeline for frequent app updates
+
+### Key Features Delivered
+
+#### User Experience
+
+* Access to 10+ certification prep apps
+* 5,000+ questions per certification
+* Flashcards, topic-wise quizzes, and mock tests
+* Instant feedback and offline study mode
+
+#### Analytics & Insights
+
+* Performance analytics by topic and domain
+* Visual progress charts and leaderboard comparisons
+
+#### Admin & Content Management
+
+* Centralized CMS
+* Subscription and purchase tracking
+* User engagement dashboards
+
+### Challenges & Solutions
+
+| Challenge                                  | Solution                                                   |
+| ------------------------------------------ | ---------------------------------------------------------- |
+| Managing multiple apps with unique content | Modular architecture enabling content reuse                |
+| Offline-friendly experience                | Local caching and background data sync                     |
+| App consistency across platforms           | Shared React Native codebase with platform-specific tuning |
+| Subscription handling                      | Unified backend integration for in-app purchases           |
+| Continuous content updates                 | Central CMS for seamless question management               |
+
+### Results & Impact
+
+**Platform Reach**
+
+* 10+ live certification prep apps
+* 50,000+ downloads
+* 4.5★ average rating
+
+**User Impact**
+
+* 80% improved exam performance
+* High subscription renewal rate
+* Global reach in 25+ countries
+
+**Client Testimonial**
+
+> “Innoviware Solutions helped us scale LearnZapp into a global mobile learning suite. Their technical depth and UX understanding allowed us to deliver exam-grade reliability and a seamless user experience across 10+ apps.”
+> — **Founder, LearnZapp**
+
+---
+Excellent — here’s the **Project 4: Pustakvari – Digital Library & Regional Literature Preservation Platform** section, fully written in the **same detailed, structured, and professional format** as your RCAT, Admicity, LearnZapp, School ERP, and TakeMyTest entries.
+
+You can directly paste this under “Project 3: LearnZapp” in your document.
+
+---
+
+## Project 4: Pustakvari – Digital Library & Regional Literature Preservation Platform
+
+### Project Overview
+
+**Client:** Pustakvari Initiative  
+**Industry:** Digital Publishing, Education, Cultural Preservation.  
+**Project Duration:** 8 months (plus ongoing updates)  
+**Users:** Students, Teachers, University Administrators, Individual Readers  
+**Scale:** 1,000+ Rare and Regional Marathi Titles  
+**Regions:** Southeast Asia
+
+---
+![Pustakvari Platform](assets/pustakvari1.jpeg)
+
+### Description
+
+**Pustakvari** is a **digital library platform** created to preserve and digitize rare and regional literature, particularly in **Marathi and other Indian languages**, that were previously inaccessible online.
+The platform serves as a **subscription-based reading ecosystem** for students, teachers, universities, and general readers—providing structured access to regional knowledge through a secure, cloud-hosted system.
+
+Through a user-friendly interface and multi-role portals, Pustakvari bridges the gap between physical preservation and modern accessibility, enabling institutions and individuals to **read, manage, and analyze digital content** efficiently.
+
+---
+
+### Technologies Used
+
+**Frontend:**
+
+* React 18, TypeScript, Tailwind CSS
+* Responsive UI for mobile, tablet, and desktop
+
+**Backend:**
+
+* Node.js (Express.js) RESTful APIs
+* Microservice-ready modular architecture
+
+**Database:**
+
+* MongoDB
+* Indexed full-text search for rapid content retrieval
+
+**Authentication & Security:**
+
+* JWT-based authentication
+* Role-based access control (RBAC)
+
+**Integrations:**
+
+* Payment Gateways (Razorpay / Stripe)
+* CDN for high-performance eBook delivery
+* Email & Notification System
+
+**Hosting:**
+
+* AWS Cloud (EC2, S3, CloudFront)
+* Auto-backups and scalability enabled
+
+---
+
+### Key Features Delivered
+
+#### Student / Individual Portal
+
+* Browse and read digital books online
+* Add titles to personal **“My Library”**
+* Track reading progress and history
+* Manage and renew subscriptions
+
+#### Teacher Portal
+
+* Curate custom reading lists for students
+* Assign books for coursework and study
+* Track reading engagement analytics
+
+#### University / Institution Admin Portal
+
+* Manage institutional subscriptions
+* Control access to book categories
+* Analyze student and faculty reading patterns
+* Generate usage and performance reports
+
+#### Super Admin Panel
+
+* Manage complete book catalog and metadata
+* Upload and digitize new titles
+* Monitor subscriptions, payments, and user roles
+* Detailed system reporting and analytics
+
+---
+
+### Challenges & Solutions
+
+| Challenge                                                | Solution                                                         |
+| -------------------------------------------------------- | ---------------------------------------------------------------- |
+| Search optimization across thousands of scanned pages    | Implemented full-text search with metadata tagging and indexing  |
+| Handling multiple user types and access roles            | Designed modular RBAC architecture with configurable permissions |
+| Subscription management for individuals and institutions | Developed dual-tier billing and renewal engine                   |
+| Preventing unauthorized distribution and piracy          | Integrated DRM-like controlled access and watermarking           |
+| Managing large eBook assets efficiently                  | Deployed CDN and caching for high-speed delivery                 |
+
+---
+
+### Results & Impact
+
+**Platform Reach**
+
+* 1,000+ digitized books across 20+ genres
+* 15+ partner schools and universities onboarded
+* 5,000+ active readers within the first operational year
+
+**Cultural & Educational Impact**
+
+* Digitally preserved rare Marathi and regional literature
+* Empowered educators to integrate regional books into digital learning
+* Strengthened access to local heritage and educational resources
+
+---
+
+### Client Testimonial
+
+> “With Pustakvari, we’ve not only digitized rare literature but made it accessible to thousands of students and institutions. Prometteur Solutions turned our vision of cultural preservation into a powerful digital experience.”
+> — **Pustakvari Team**
+
+---
+
+## Project 5: School ERP – Unified Academic Management Platform
+
+### Project Overview
+
+**Client:** French Education Provider (Multi-School Network in Africa)
+**Industry:** Education Technology School Management  
+**Project Duration:** 9 months (plus ongoing maintenance)
+**Users:** Administrators, Teachers, Students, Parents, Accountants, Librarians  
+**Scale:**  50+ Schools  
+**Regions:** 5 African Countries 
+
+
+![School ERP Platform](assets/ERP1.png)
+![School ERP Platform](assets/ERP2.png)
+
+### Description
+
+The **School ERP** is a comprehensive academic and administrative management system developed to streamline school operations for a French education network.
+It centralizes all aspects of school management — from student admission and academics to finance, library, and transport — into a secure, cloud-based platform with distinct portals for each user role.
+
+This multi-tenant ERP enables transparency, automation, and efficiency across multiple institutions and time zones, providing each stakeholder with real-time visibility and actionable data insights.
+
+---
+
+### Technologies Used
+
+**Frontend:**
+
+* React 18, TypeScript, Tailwind CSS
+* Responsive and multilingual UI for desktop and mobile
+
+**Backend:**
+
+* Node.js (Express.js) REST APIs
+* Modular microservice architecture for scalability
+
+**Database:**
+
+* MongoDB / MySQL
+* Optimized schemas for academic, financial, and library data
+
+**Authentication & Security:**
+
+* JWT-based secure authentication
+* Role-based access control (RBAC)
+* Multi-tenant architecture for multiple schools
+
+**Integrations:**
+
+* Payment Gateway (Fee collection and reconciliation)
+* Email, SMS, and Push Notification System
+* PDF generation for report cards and ID cards
+
+**Hosting:**
+
+* AWS Cloud (EC2, S3, RDS, CloudFront)
+* Auto-scaling, secure backups, and 99.9% uptime
+
+---
+
+### Key Features Delivered
+
+#### Admin Dashboard
+
+* Centralized academic and financial overview
+* Multi-school configuration and monitoring
+* Role and permission management
+
+#### Student Module
+
+* Online admissions and bulk enrollments
+* Attendance and timetable management
+* Grades, report cards, and digital ID cards
+
+#### Teacher Portal
+
+* Class and section management
+* Assignment and grading tools
+* Communication with students and parents
+
+#### Parent Portal
+
+* Real-time student performance tracking
+* Fee payments and notifications
+* Messaging system for teacher communication
+
+#### Accountant & Librarian Modules
+
+* Fee management, accounting, and reporting
+* Library inventory and circulation management
+
+---
+
+### Challenges & Solutions
+
+| Challenge                                  | Solution                                                                   |
+| ------------------------------------------ | -------------------------------------------------------------------------- |
+| Managing multiple schools across countries | Implemented a centralized multi-tenant structure with localized time zones |
+| Handling large student data efficiently    | Built bulk upload tools with CSV/Excel import                              |
+| Multi-currency fee and expense tracking    | Integrated dynamic currency conversion module                              |
+| Language and cultural diversity            | Developed multilingual support (English, French, Portuguese)               |
+| Real-time communication across roles       | Integrated push notifications and automated alerts                         |
+
+---
+
+### Results & Impact
+
+**Deployment Reach**
+
+* 50+ schools across 5 African countries
+* 20,000+ students and 2,000+ staff onboarded
+
+**Operational Impact**
+
+* 60% reduction in administrative workload
+* 98% platform adoption rate within first academic year
+* Improved communication and transparency between schools and parents
+
+**Client Testimonial**
+
+> “Innoviware Solutions transformed our vision into a unified ERP system that now powers dozens of schools across Africa. The team’s understanding of education workflows and scalability was outstanding.”
+> — **Afif**, CEO, MyEducPro
+
+
+---
+
+
