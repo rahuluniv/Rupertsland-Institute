@@ -397,11 +397,6 @@ With **50,000+ cumulative downloads** and an **average 4.5★ rating** on Google
 > — **Founder, LearnZapp**
 
 ---
-Excellent — here’s the **Project 4: Pustakvari – Digital Library & Regional Literature Preservation Platform** section, fully written in the **same detailed, structured, and professional format** as your RCAT, Admicity, LearnZapp, School ERP, and TakeMyTest entries.
-
-You can directly paste this under “Project 3: LearnZapp” in your document.
-
----
 
 ## Project 4: Pustakvari – Digital Library & Regional Literature Preservation Platform
 
@@ -539,8 +534,8 @@ Through a user-friendly interface and multi-role portals, Pustakvari bridges the
 **Regions:** 5 African Countries 
 
 
-![School ERP Platform](assets/ERP1.png)
-![School ERP Platform](assets/ERP2.png)
+![School ERP Platform](assets/ERP1.jpeg)
+![School ERP Platform](assets/ERP2.jpeg)
 
 ### Description
 
