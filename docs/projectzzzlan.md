@@ -263,7 +263,7 @@ The project is divided into **six major phases** over 32 weeks:
 
 **Frontend Development:**
 
-- [ ] Next.js 14 project initialization
+- [ ] Next.js 14 or Blazor project initialization
 - [ ] Project structure and routing setup
 - [ ] Tailwind CSS configuration
 - [ ] Design system components library

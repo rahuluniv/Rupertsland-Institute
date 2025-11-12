@@ -114,7 +114,7 @@ While our proposal is fixed-price, we provide this breakdown for transparency:
 **Included Activities:**
 
 - .NET 8 Web API development setup
-- Next.js 14 frontend framework setup
+- Next.js 14 or Blazor frontend framework setup
 - SQL Server 2022 database creation
 - Entity Framework Core implementation
 - Core database tables and relationships

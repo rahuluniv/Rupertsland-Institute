@@ -23,7 +23,7 @@
 
 ## 1. Executive Summary
 
-Innoviware Solutions proposes a modern, secure and highly functional Online Student Application Platform that will streamline the funding application process for Métis students and enhance administrative efficiency for Rupertsland Institute staff. Our solution leverages cutting-edge technologies—**.NET 8** for the backend API and **Next.js 14** for the frontend—to deliver a robust, scalable and user-friendly platform.
+Innoviware Solutions proposes a modern, secure and highly functional Online Student Application Platform that will streamline the funding application process for Métis students and enhance administrative efficiency for Rupertsland Institute staff. Our solution leverages cutting-edge technologies—**.NET 8** for the backend API and **Next.js 14 or Blazor** for the frontend—to deliver a robust, scalable and user-friendly platform.
 
 Our proposed platform will:
 - Provide an intuitive student-facing application portal
@@ -41,7 +41,7 @@ Our proposed platform will:
 
 Our solution follows a modern **three-tier architecture**:
 
-1. **Presentation Layer:** Next.js 14 frontend application providing the user interface
+1. **Presentation Layer:** Next.js 14 or Blazor frontend application providing the user interface
 2. **Application Layer:** .NET 8 Web API handling business logic and orchestration
 3. **Data Layer:** Microsoft SQL Server 2022 for secure data storage and management
 
@@ -90,30 +90,58 @@ The platform consists of four primary modules:
 
 ### 4.1 Frontend Technologies
 
-**Primary Framework: Next.js 14**
+**Primary Framework Options: Next.js 14 *or* Blazor**
+
+---
+
+#### **Option A: Next.js 14**
 
 Next.js provides an optimal foundation for the user interface with:
 
-- **Server-Side Rendering (SSR):** Improved performance and SEO
-- **Static Site Generation (SSG):** Fast page loads for static content
-- **API Routes:** Built-in API capabilities for frontend needs
-- **Automatic Code Splitting:** Optimized bundle sizes
-- **TypeScript Support:** Type-safe development
-- **Built-in Optimization:** Image optimization, font optimization
+* **Server-Side Rendering (SSR):** Improved performance and SEO
+* **Static Site Generation (SSG):** Fast page loads for static content
+* **API Routes:** Built-in API capabilities for frontend needs
+* **Automatic Code Splitting:** Optimized bundle sizes
+* **TypeScript Support:** Type-safe development
+* **Built-in Optimization:** Image optimization, font optimization
 
-**Supporting Technologies:**
+**Supporting Technologies (Next.js stack):**
 
-- **React 18:** UI component library
-- **TypeScript:** Type-safe JavaScript
-- **Tailwind CSS:** Utility-first CSS framework for responsive design
-- **React Hook Form:** Efficient form handling and validation
-- **Zod:** Schema validation for form inputs
-- **TanStack Query (React Query):** Data fetching and caching
-- **Axios:** HTTP client for API communication
-- **NextAuth.js:** Authentication for Next.js with OIDC support
-- **Chart.js / Recharts:** Data visualization for dashboards
-- **React PDF:** PDF document generation and viewing
-- **date-fns:** Date manipulation and formatting
+* **React 18:** UI component library
+* **TypeScript:** Type-safe JavaScript
+* **Tailwind CSS:** Utility-first CSS framework for responsive design
+* **React Hook Form:** Efficient form handling and validation
+* **Zod:** Schema validation for form inputs
+* **TanStack Query (React Query):** Data fetching and caching
+* **Axios:** HTTP client for API communication
+* **NextAuth.js:** Authentication for Next.js with OIDC support
+* **Chart.js / Recharts:** Data visualization for dashboards
+* **React PDF:** PDF document generation and viewing
+* **date-fns:** Date manipulation and formatting
+
+---
+
+#### **Option B: Blazor (WebAssembly or Server)**
+
+Blazor offers a C#/.NET-driven approach to building rich web UIs:
+
+* **C# Full-Stack:** Shared models and logic across client and server
+* **Hosting Models:** **Blazor WebAssembly** (client-side) or **Blazor Server** (SignalR-based)
+* **Pre-rendering & SSR Support:** Improved perceived load and SEO (with ASP.NET Core)
+* **Component Model:** Reusable Razor components with routing and layouts
+* **Strong .NET Ecosystem:** Seamless integration with ASP.NET Core APIs, EF Core, and tooling
+
+**Supporting Technologies (Blazor stack):**
+
+* **.NET 8+:** Modern runtime and SDK
+* **Razor Components:** UI composition with C#
+* **Styling:** Tailwind CSS or Bootstrap (via community templates)
+* **Forms & Validation:** DataAnnotations or **FluentValidation**
+* **State & Data:** `HttpClient`, **Refit** (typed REST), **MediatR** (patterns)
+* **Auth:** ASP.NET Core Identity, OpenID Connect (e.g., Duende, Azure AD / MSAL)
+* **Charts:** **ChartJs.Blazor**, **MudBlazor** components
+* **PDF:** **QuestPDF**, **IronPDF**, or viewer components (e.g., **Syncfusion**)
+* **Dates:** **NodaTime** for robust date/time handling
 
 ### 4.2 Backend Technologies
 
@@ -1399,11 +1427,11 @@ Our solution will provide seamless bi-directional integration with the existing 
 
 ## 15. Conclusion
 
-Innoviware Solutions' proposed solution delivers a modern, secure, and scalable Online Student Application Platform that will transform how Rupertsland Institute serves Métis students across Alberta. By leveraging **Next.js 14** for an exceptional user experience and **.NET 8** for robust backend services, we provide a future-proof foundation that can grow with Rupertsland's needs.
+Innoviware Solutions' proposed solution delivers a modern, secure, and scalable Online Student Application Platform that will transform how Rupertsland Institute serves Métis students across Alberta. By leveraging **Next.js 14 or Blazor** for an exceptional user experience and **.NET 8** for robust backend services, we provide a future-proof foundation that can grow with Rupertsland's needs.
 
 **Key Solution Highlights:**
 
- **Modern Technology Stack:** Next.js 14 and .NET 8 provide cutting-edge performance and developer experience
+ **Modern Technology Stack:** Next.js 14 or Blazor and .NET 8 provide cutting-edge performance and developer experience
 
 **Seamless Integration:** Full integration with KETO and Rupertsland Identity Server
 
